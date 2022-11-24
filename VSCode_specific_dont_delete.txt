@@ -1,0 +1,5 @@
+from VS Code :
+pull
+git stage ('git add .' equivalent. Click on '+' sign right alongside 'Changes')
+git commit 
+git push 

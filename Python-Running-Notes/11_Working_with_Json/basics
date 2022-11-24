@@ -1,0 +1,23 @@
+ℹ️ dir for images :
+C:\Users\Madhup\Oracle Content - Accounts\Madhup\temp\Others\Personal\PerPy\Madhup-Proj\Python-Running-Notes\images
+
+
+💠Basically bare minimum I need to learn json module natively available in Python
+
+📚link for the course :
+https://realpython.com/python-json/
+
+
+💡 what is serialization?
+Encoding data into json format. Ex. converting python list to json.
+
+
+💡 what is deserialization?
+decoding json data. Ex. reading json data into a python list.
+
+The process of encoding JSON is usually called serialization. This term refers to the transformation of data into a series of bytes (hence serial) to be stored or transmitted across a network.
+
+
+👉 with open() in Python :
+https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/
+
