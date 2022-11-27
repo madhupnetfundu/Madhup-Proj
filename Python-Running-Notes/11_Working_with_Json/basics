@@ -8,6 +8,8 @@ C:\Users\Madhup\Oracle Content - Accounts\Madhup\temp\Others\Personal\PerPy\Madh
 https://realpython.com/python-json/
 
 
+💡 In python, json exists as a string
+
 💡 what is serialization?
 Encoding data into json format. Ex. converting python list to json.
 
@@ -21,3 +23,7 @@ The process of encoding JSON is usually called serialization. This term refers t
 👉 with open() in Python :
 https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/
 
+
+
+🚨 json k format ko load kaise karna hai_VVIP:
+https://youtu.be/tKYefJqtvCA?t=500
