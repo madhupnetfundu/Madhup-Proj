@@ -27,3 +27,22 @@ https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-exam
 
 🚨 json k format ko load kaise karna hai_VVIP:
 https://youtu.be/tKYefJqtvCA?t=500
+
+
+🚨 Loads kya karta hai? (from https://youtu.be/Nc8au-99pfI?t=66)
+loads koi bhi json jaisi string ko ek python dict mein convert kar deta hai.
+..
+loads string ko convert kar deta hai object mein & vo object hoti hai Python ki dictionary.
+
+🚨 dumps kya karta hai? (from https://youtu.be/Nc8au-99pfI?t=174)
+dumps ek python dict ko json string mein convert kar deta hai.
+..
+koi bhi python object/dict usko agar string mein convert karna hai to dumps use karna hoga.
+
+🧠 json to dict k liye json.loads() use hota hai. 
+ OR in other words
+🧠 with json.loads 'json string' will be converted to python dict.
+
+🧠 with json.dumps python dict will be converted to json string.
+
+practice this till the concept is clear : https://www.youtube.com/watch?v=mJeKgpjbQYc
