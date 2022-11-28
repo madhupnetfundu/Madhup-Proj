@@ -1,0 +1,27 @@
+Work Request ID : ocid1.exascaleworkrequest.oc1.iad.anuwcljrj43zu2ib3grebjgd5jgiu6rfbvcoeogwxkqnhmfdukxjs6i37bha
+VM Cluster ID   : ocid1.exascalevmcluster.oc1.iad.anuwcljrj43zu2iazmvyijfsfvfwbctj67rpiq5codverughqamjrty72cta
+Status          : SUCCESS
+Hostname Prefix : tay
+VM Count        : 2
+
+Step Name                         Start Time              End Time                Elapsed Time
+--------------------------------- ----------------------- ----------------------- ----------------
+VM Cluster CA                     2022-10-31 16:40:54     2022-10-31 17:16:12     35m,18s
+  Fetch Server Details            2022-10-31 16:41:06     2022-10-31 16:41:09     3s
+  Network Preparation             2022-10-31 16:41:10     2022-10-31 16:44:19     3m,9s
+  VM Cluster Configuration        2022-10-31 16:44:19     2022-10-31 17:14:25     30m,6s
+    Prepare OEDA                  2022-10-31 16:44:44     2022-10-31 16:45:01     16s
+    Acquire Locks                 2022-10-31 16:45:02     2022-10-31 16:45:02     0s
+    Create VMs                    2022-10-31 16:45:02     2022-10-31 16:54:59     9m,56s
+    Create OS Users               2022-10-31 16:55:05     2022-10-31 16:55:16     10s
+    Setup Cell Connectivity       2022-10-31 16:55:16     2022-10-31 16:55:29     13s
+    Configure Exascale on Compute 2022-10-31 16:55:29     2022-10-31 16:55:56     27s
+    Install GI Home               2022-10-31 16:55:56     2022-10-31 16:57:16     1m,19s
+    Initialize GI Cluster         2022-10-31 16:57:16     2022-10-31 17:10:32     13m,15s
+    Install DB Home               2022-10-31 17:10:32     2022-10-31 17:12:54     2m,21s
+    Re-Link DB                    2022-10-31 17:12:54     2022-10-31 17:13:58     1m,3s
+    Collect VM Diagnostics        2022-10-31 17:13:58     2022-10-31 17:14:01     3s
+  Delete Private Endpoint         2022-10-31 17:14:25     2022-10-31 17:16:06     1m,41s
+  Archive Logs                    2022-10-31 17:16:11     2022-10-31 17:16:12     1s
+
+## ** Please note that indentation in output is important to show the sub-steps
