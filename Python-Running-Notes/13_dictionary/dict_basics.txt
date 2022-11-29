@@ -1,1 +1,8 @@
-https://stackabuse.com/how-to-sort-dictionary-by-value-in-python/ --> VVIP
+VVIP .. sort dict in multiple ways :
+https://stackabuse.com/how-to-sort-dictionary-by-value-in-python/
+
+VVIP_looping through dict in various ways :
+https://www.w3schools.com/python/gloss_python_loop_dictionary_items.asp
+
+Sorting a Python Dictionary: Values, Keys, and More :
+https://realpython.com/sort-python-dictionary/

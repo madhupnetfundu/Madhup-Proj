@@ -68,4 +68,19 @@ a = {
     }
 }
 b=a['raw']
-print (b)
+# print (b)
+
+# As per https://stackabuse.com/how-to-sort-dictionary-by-value-in-python/
+# dict1 = {1: 1, 2: 9, 3: 4}
+# sorted_values = sorted(dict1.values()) # Sort the values
+# sorted_dict = {}
+
+# for i in sorted_values:
+#     for k in dict1.keys():
+#         if dict1[k] == i:
+#             sorted_dict[k] = dict1[k]
+
+# print(sorted_dict)
+
+sorted_values = sorted(b.values())
+print (sorted_values)

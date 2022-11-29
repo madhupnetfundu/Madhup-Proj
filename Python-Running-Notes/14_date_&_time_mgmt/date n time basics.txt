@@ -1,0 +1,4 @@
+https://realpython.com/python-time-module/
+
+Good one :
+https://pynative.com/python-get-time-difference/
