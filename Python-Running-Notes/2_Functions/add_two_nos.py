@@ -1,6 +1,3 @@
-from unittest import result
-
-
 def add_function(num1, num2):
     return num1+num2 
     ## return allows to save the result to a variable.
