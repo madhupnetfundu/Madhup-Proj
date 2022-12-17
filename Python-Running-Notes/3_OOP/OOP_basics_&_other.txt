@@ -1,5 +1,11 @@
-https://realpython.com/learning-paths/object-oriented-programming-oop-python/ --> learning path realpython
 
-https://www.youtube.com/watch?v=Ej_02ICOIgs --> OOP with Python
+1️⃣ learning path realpython
+https://realpython.com/learning-paths/object-oriented-programming-oop-python/
 
-if the functions are created inside the class then they are called methods
+2️⃣ youtube vid for Python OOP :
+https://www.youtube.com/watch?v=Ej_02ICOIgs
+
+3️⃣ my udemy vid
+Memorise this : https://www.udemy.com/course/complete-python-bootcamp/learn/lecture/9478292#overview
+
+👉if the functions are created inside the class then they are called methods
