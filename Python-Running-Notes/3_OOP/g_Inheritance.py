@@ -26,8 +26,8 @@ class Dog(Animal):
 
 d = Dog()
 d.whoAmI()
-# d.eat()
-# d.bark()
+d.eat()
+d.bark()
 
 
 # In this example, we have two classes: Animal and Dog. The Animal is the base class , the Dog is the derived class.
