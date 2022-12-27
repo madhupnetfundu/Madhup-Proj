@@ -8,4 +8,7 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs
 3️⃣ my udemy vid
 Memorise this : https://www.udemy.com/course/complete-python-bootcamp/learn/lecture/9478292#overview
 
+4️⃣ tutorialspoint :
+https://www.tutorialspoint.com/python/python_classes_objects.htm 
+
 👉if the functions are created inside the class then they are called methods
