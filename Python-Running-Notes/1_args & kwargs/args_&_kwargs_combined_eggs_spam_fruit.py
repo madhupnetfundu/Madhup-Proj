@@ -5,4 +5,4 @@ def myfunc(*args, **kwargs):
     else:
         pass
         
-myfunc('eggs','spam',fruit='cherries',juice='orange')
+myfunc('eggs','spam', fruit='cherries',juice='orange')

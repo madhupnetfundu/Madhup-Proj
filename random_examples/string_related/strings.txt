@@ -1,0 +1,2 @@
+👉What does %s mean in a Python format string?
+https://www.geeksforgeeks.org/what-does-s-mean-in-a-python-format-string/

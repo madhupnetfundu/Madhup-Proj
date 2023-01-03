@@ -1,0 +1,14 @@
+👉 Nice links :
+https://www.w3schools.com/python/ref_string_join.asp
+https://www.geeksforgeeks.org/python-string-join-method/
+
+👉 Definition and Usage
+The join() method takes all items in an iterable and joins them into one string.
+A string must be specified as the separator.
+
+
+👉 Syntax
+string.join(iterable)
+
+Parameters: 
+Iterable – objects capable of returning their members one at a time. Some examples are List, Tuple, String, Dictionary, and Set
