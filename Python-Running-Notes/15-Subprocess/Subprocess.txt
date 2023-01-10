@@ -1,0 +1,3 @@
+👉 Imp links for getting started:
+https://www.geeksforgeeks.org/python-execute-and-parse-linux-commands/
+https://realpython.com/python-subprocess/
