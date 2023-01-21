@@ -1,1 +1,2 @@
 https://realpython.com/courses/pathlib-python/ 
+https://realpython.com/read-write-files-python/
