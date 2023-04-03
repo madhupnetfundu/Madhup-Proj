@@ -10,3 +10,4 @@ dog2=Dog("doggie2",5)
 print (dog1.age)
 print (dog2.name)
 print("{} is {} years old and {} is {} years old".format(dog1.name, dog1.age, dog2.name, dog2.age))
+
