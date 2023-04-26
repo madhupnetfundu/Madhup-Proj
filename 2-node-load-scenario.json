@@ -1,0 +1,21 @@
+[
+    {
+        "description": "Example: Create 2-node 4-core VM Clusters",
+        "loadPercentage": 25,
+        "nodesPerVmCluster": 2,
+        "coresPerVm": 4,
+        "dbSetup": "vault"
+    },
+    {
+        "description": "Example: Create 2-node 8-core VM Clusters",
+        "loadPercentage": 25,
+        "nodesPerVmCluster": 2,
+        "coresPerVm": 8
+    },
+    {
+        "description": "Example: Create 2-node 4-core VM Clusters",
+        "loadPercentage": 50,
+        "nodesPerVmCluster": 2,
+        "coresPerVm": 4
+    }
+]
