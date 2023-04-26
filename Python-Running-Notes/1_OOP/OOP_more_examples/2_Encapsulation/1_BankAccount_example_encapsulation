@@ -1,0 +1,48 @@
+Here's another example of encapsulation in Python using private and protected attributes:
+
+```python
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self._account_number = account_number
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+        print(f"Deposited {amount}. New balance: {self.__balance}")
+
+    def withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+            print(f"Withdrew {amount}. New balance: {self.__balance}")
+        else:
+            print("Insufficient balance")
+
+    def get_account_number(self):
+        return self._account_number
+
+    def get_balance(self):
+        return self.__balance
+
+# create a bank account object
+account = BankAccount("1234567890", 5000)
+
+# try to access the private attribute __balance directly
+print(account.__balance)  # Output: AttributeError: 'BankAccount' object has no attribute '__balance'
+
+# try to withdraw more than the balance
+account.withdraw(7000)  # Output: Insufficient balance
+
+# withdraw and deposit some amount
+account.withdraw(1000)  # Output: Withdrew 1000. New balance: 4000
+account.deposit(2000)   # Output: Deposited 2000. New balance: 6000
+
+# try to modify the private attribute __balance directly
+account.__balance = 10000
+print(account.get_balance())  # Output: 6000
+```
+
+In this example, the `BankAccount` class has a private attribute `__balance` and a protected attribute `_account_number`. The `deposit` and `withdraw` methods are public and can be called by the users of the class to modify the balance. However, the private attribute `__balance` can only be accessed through the getter and setter methods `get_balance` and `deposit`, respectively.
+
+In addition, the `account_number` attribute is protected and can be accessed by the subclass but not directly from outside the class. 
+
+When we try to access the private attribute `__balance` directly or modify it, we get an `AttributeError` because it is not directly accessible outside the class.

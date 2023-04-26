@@ -24,7 +24,6 @@
 # print(sol1.get_list_length())
 
 
-# ## generated the below code using chat gpt
 
 # class ListManipulator:
 #     def __init__(self, start, end):
