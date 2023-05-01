@@ -1,0 +1,106 @@
+Sure, here are a few more examples of inheritance in Python:
+
+Example 1: Vehicle Inheritance
+
+```python
+
+
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def start(self):
+        print("Starting the engine.")
+
+    def stop(self):
+        print("Stopping the engine.")
+
+
+class Car(Vehicle):
+    def __init__(self, make, model, year, num_wheels):
+        super().__init__(make, model, year)
+        self.num_wheels = num_wheels
+
+    def start(self):
+        super().start()
+        print("Put the car in gear.")
+
+    def stop(self):
+        super().stop()
+        print("Put the car in park.")
+
+
+class Motorcycle(Vehicle):
+    def __init__(self, make, model, year, num_wheels):
+        super().__init__(make, model, year)
+        self.num_wheels = num_wheels
+
+    def start(self):
+        super().start()
+        print("Pull the throttle.")
+
+    def stop(self):
+        super().stop()
+        print("Apply the brakes.")
+
+
+car = Car("Toyota", "Corolla", 2020, 4)
+motorcycle = Motorcycle("Harley-Davidson", "Sportster", 2022, 2)
+
+car.start()  # Output: Starting the engine. Put the car in gear.
+motorcycle.stop()  # Output: Stopping the engine. Apply the brakes.
+```
+
+In this example, we have a base class `Vehicle` that has attributes `make`, `model`, and `year`, and methods `start()` and `stop()`. The derived classes `Car` and `Motorcycle` inherit from the `Vehicle` class and override the `start()` and `stop()` methods with their own implementation.
+
+We create an instance of `Car` called `car` and an instance of `Motorcycle` called `motorcycle`. We can access the `make`, `model`, and `year` attributes of both `car` and `motorcycle`, which are inherited from the `Vehicle` class .
+
+When we call the `start()` and `stop()` methods on `car` and `motorcycle`, the implementation of the method in the corresponding derived classes is called, which outputs messages specific to the type of vehicle.
+
+Example 2: Person Inheritance
+
+```python
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def eat(self):
+        print("I am eating.")
+
+    def sleep(self):
+        print("I am sleeping.")
+
+
+class Student(Person):
+    def __init__(self, name, age, school):
+        super().__init__(name, age)
+        self.school = school
+
+    def study(self):
+        print("I am studying.")
+
+
+class Teacher(Person):
+    def __init__(self, name, age, subject):
+        super().__init__(name, age)
+        self.subject = subject
+
+    def teach(self):
+        print("I am teaching.")
+
+
+student = Student("Alice", 18, "Harvard University")
+teacher = Teacher("Bob", 35, "Mathematics")
+
+student.eat()  # Output: I am eating.
+teacher.teach()  # Output: I am teaching.
+```
+
+In this example, we have a base class `Person` that has attributes `name` and `age`, and methods `eat()` and `sleep()`. The derived classes `Student` and `Teacher` inherit from the `Person` class and add their own methods `study()` and `teach()`, respectively.
+
+We create an instance of `Student` called `student
