@@ -1,0 +1,104 @@
+### Basic Docker CLIs
+````docker
+docker run: Create and run a container from an image.
+docker ps: List all running containers.
+docker images: List all images.
+docker build: Build an image from a Dockerfile.
+docker login: Log in to Docker Hub.
+docker push: Push an image to Docker Hub.
+docker pull: Pull an image from Docker Hub.
+````
+<br>
+
+### Container Management CLIs
+
+````docker
+docker start: Start a stopped container.
+docker stop: Stop a running container.
+docker restart: Restart a container.
+docker kill: Kill a container.
+docker rm: Remove a container.
+docker attach: Attach to a running container.
+docker logs: Show the logs for a container.
+docker exec: Run a command in a running container.
+````
+<br>
+
+### Inspecting the Container
+```docker
+docker inspect: Get information about a container.
+docker stats: Get statistics about a container.
+docker top: Get a list of processes running in a container.
+````
+<br>
+
+### Interacting with Container
+```docker
+docker cp: Copy files to or from a container.
+docker volume create: Create a volume.
+docker volume attach: Attach a volume to a container.
+docker volume inspect: Get information about a volume.
+docker volume remove: Remove a volume.
+```
+<br>
+
+### Image Management Commands
+```docker
+docker tag: Tag an image.
+docker save: Save an image to a file.
+docker load: Load an image from a file.
+docker history: Show the history of an image.
+docker rmi: Remove an image.
+```
+<br>
+
+Image Transfer Commands
+```docker
+docker push: Push an image to a registry.
+docker pull: Pull an image from a registry.
+docker save: Save an image to a file.
+docker load: Load an image from a file.
+```
+<br>
+
+### Builder Main Commands
+```docker
+docker build: Build an image from a Dockerfile.
+docker buildx: Build an image using multiple builders.
+docker compose: Build and run a set of containers defined in a compose file.
+```
+<br>
+
+### The Docker CLI
+```docker
+docker help: Get help for a command.
+docker version: Get the version of Docker.
+docker info: Get information about Docker.
+docker system prune: Remove unused containers, images, and volumes.
+```
+<br>
+
+### Docker Security
+```docker
+docker run --privileged: Run a container with root privileges.
+docker run --net=host: Run a container with the host network.
+docker run --ipc=host: Run a container with the host IPC.
+docker run --pid=host: Run a container with the host PID.
+```
+<br>
+
+### Contributors
+```docker
+docker contributors: List the contributors to Docker.
+docker codesearch: Search the Docker code base.
+docker blog: Read the Docker blog.
+```
+<br>
+
+### Support and Community
+```docker
+docker support: Get support for Docker.
+docker community: Join the Docker community.
+docker documentation: Read the Docker documentation.
+docker github: Get the Docker source code on GitHub.
+```

@@ -1,0 +1,71 @@
+## Links 
+https://realpython.com/python-lambda/
+https://realpython.com/courses/python-lambda-functions/
+https://realpython.com/quizzes/python-lambda/ 
+
+In Python, a lambda expression is a way to create anonymous functions, which are functions without a name. Lambda functions are useful when we need to define a small, one-time-use function, without needing to define a named function using `def`.
+
+Here is an example of a lambda expression that takes two arguments and returns their sum:
+
+```
+sum = lambda a, b: a + b
+print(sum(2, 3))  # Output: 5
+```
+
+In this example, we are defining a lambda function named `sum` that takes two arguments `a` and `b`, and returns their sum. The `lambda` keyword is used to define the function, and the function is assigned to a variable `sum`.
+
+Here is another example that uses a lambda expression with the `filter` built-in function to filter out even numbers from a list:
+
+```
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # Output: [2, 4, 6, 8, 10]
+```
+
+In this example, we are using the `filter` built-in function to filter out even numbers from a list of `numbers`. The `filter` function takes two arguments, a function and an iterable. The function should return `True` or `False` for each item in the iterable, and the `filter` function returns an iterator that contains only the items for which the function returned `True`. We are using a lambda expression to define the function that checks if a number is even, and passing it as the first argument to `filter`. Finally, we are converting the iterator to a list using the `list` built-in function.
+
+Lambda expressions are particularly useful in functional programming, where functions are treated as first-class citizens and can be passed around as arguments to other functions. They can also be used to write more concise and readable code.
+
+
+Here are some more detailed examples:
+
+1. Sorting a list of tuples based on the second element of each tuple using lambda:
+
+```
+students = [('Alice', 90), ('Bob', 80), ('Charlie', 85)]
+sorted_students = sorted(students, key=lambda x: x[1], reverse=True)
+print(sorted_students)  # [('Alice', 90), ('Charlie', 85), ('Bob', 80)]
+```
+
+2. Filtering a list of numbers to only include even numbers using lambda:
+
+```
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # [2, 4, 6]
+```
+
+3. Defining a simple function using lambda:
+
+```
+multiply = lambda x, y: x * y
+print(multiply(2, 3))  # 6
+```
+
+4. Using lambda in combination with `map` to apply a function to each element of a list:
+
+```
+numbers = [1, 2, 3, 4, 5]
+squares = list(map(lambda x: x**2, numbers))
+print(squares)  # [1, 4, 9, 16, 25]
+```
+
+5. Sorting a list of strings based on the length of each string using lambda:
+
+```
+fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+sorted_fruits = sorted(fruits, key=lambda x: len(x))
+print(sorted_fruits)  # ['date', 'apple', 'banana', 'cherry', 'elderberry']
+```
+
+

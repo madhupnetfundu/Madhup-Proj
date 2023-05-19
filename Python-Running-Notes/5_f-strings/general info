@@ -1,0 +1,50 @@
+## Links 
+https://realpython.com/courses/python-3-f-strings-improved-string-formatting-syntax/ 
+
+## Examples 
+Sure, here are some examples of f-strings in Python:
+
+1. Simple variable substitution:
+```
+name = "John"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+```
+Output: `My name is John and I am 25 years old.`
+
+2. Arithmetic operations:
+```
+x = 5
+y = 3
+print(f"The sum of {x} and {y} is {x + y}.")
+```
+Output: `The sum of 5 and 3 is 8.`
+
+3. Formatting numbers and strings:
+```
+price = 9.99
+quantity = 3
+print(f"The total cost is ${price * quantity:.2f}.")
+```
+Output: `The total cost is $29.97.`
+
+4. Accessing object attributes and methods:
+```
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def say_hello(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+
+person = Person("John", 25)
+print(f"{person.say_hello()}")
+```
+Output: `Hello, my name is John and I am 25 years old.`
+
+5. Using f-strings with conditional expressions:
+```
+x = 10
+print(f"The value of x is {x}{' and it is even.' if x % 2 == 0 else ' and it is odd.'}")
+```
+Output: `The value of x is 10 and it is even.`

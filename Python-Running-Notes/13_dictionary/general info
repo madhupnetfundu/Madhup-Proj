@@ -1,0 +1,95 @@
+## Links 
+https://realpython.com/courses/python-dictionary-iteration/ 
+https://realpython.com/courses/ordereddict-python/
+https://realpython.com/courses/dicts-arrays-ideal-data-structure/ 
+https://realpython.com/courses/python-defaultdict-type/ 
+
+How to create dictionaries on the fly using zip()
+https://realpython.com/courses/python-zip-function/
+
+## Examples (Simple to advanved)
+In Python, a dictionary is a collection of key-value pairs enclosed in curly braces `{}`. Here are some examples ranging from simple to advanced:
+
+1. Simple example: A dictionary with two key-value pairs
+
+```
+# Defining a dictionary
+person = {'name': 'John', 'age': 30}
+
+# Accessing values from a dictionary
+print(person['name']) # Output: John
+print(person['age'])  # Output: 30
+```
+
+2. Dictionary with nested dictionary:
+
+```
+# Defining a dictionary with nested dictionary
+person = {'name': 'John', 'age': 30, 'address': {'city': 'New York', 'state': 'NY'}}
+
+# Accessing values from a nested dictionary
+print(person['address']['city'])  # Output: New York
+print(person['address']['state']) # Output: NY
+```
+
+3. Dictionary with list as values:
+
+```
+# Defining a dictionary with list as values
+person = {'name': 'John', 'age': 30, 'languages': ['English', 'Spanish', 'French']}
+
+# Accessing values from a dictionary with list as values
+print(person['name'])                # Output: John
+print(person['age'])                 # Output: 30
+print(person['languages'][0])        # Output: English
+print(person['languages'][1])        # Output: Spanish
+print(person['languages'][2])        # Output: French
+```
+
+4. Using dictionary comprehension to create a dictionary:
+
+```
+# Using dictionary comprehension to create a dictionary
+squares = {x: x**2 for x in range(6)}
+
+# Printing the dictionary
+print(squares)  # Output: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
+
+5. Using the `dict()` constructor to create a dictionary:
+
+```
+# Using dict() constructor to create a dictionary
+person = dict(name='John', age=30, city='New York')
+
+# Printing the dictionary
+print(person)  # Output: {'name': 'John', 'age': 30, 'city': 'New York'}
+```
+
+6. Merging two dictionaries using the `update()` method:
+
+```
+# Merging two dictionaries using the update() method
+person = {'name': 'John', 'age': 30, 'city': 'New York'}
+person_info = {'name': 'Alex', 'city': 'San Francisco'}
+
+person.update(person_info)
+
+# Printing the merged dictionary
+print(person)  # Output: {'name': 'Alex', 'age': 30, 'city': 'San Francisco'}
+```
+
+7. Converting two lists into a dictionary using the `zip()` function:
+
+```
+# Converting two lists into a dictionary using the zip() function
+keys = ['name', 'age', 'city']
+values = ['John', 30, 'New York']
+
+person = dict(zip(keys, values))
+
+# Printing the dictionary
+print(person)  # Output: {'name': 'John', 'age': 30, 'city': 'New York'}
+```
+
+These are just a few examples of how dictionaries can be used in Python.

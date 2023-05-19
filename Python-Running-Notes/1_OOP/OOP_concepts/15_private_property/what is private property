@@ -1,0 +1,31 @@
+In Python, private properties are class attributes or instance attributes that are intended to be used only within the class and are not meant to be accessed directly from outside the class. Private properties can be defined by prefixing the attribute name with two underscores `__`. 
+
+Here's an example:
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age
+    
+    def get_age(self):
+        return self.__age
+    
+    def set_age(self, age):
+        if age >= 0 and age <= 120:
+            self.__age = age
+        else:
+            print("Invalid age value")
+            
+person = Person('John', 30)
+print(person.name)   # Output: John
+print(person.__age)  # This will raise an AttributeError: 'Person' object has no attribute '__age'
+```
+
+In this example, we have a `Person` class with a `name` attribute and a private `__age` attribute. We also have `get_age` and `set_age` methods to access and modify the private `__age` attribute. 
+
+When we try to access the private `__age` attribute directly from outside the class using `person.__age`, it raises an `AttributeError` because private attributes are not accessible from outside the class. Instead, we need to use the `get_age` and `set_age` methods to access and modify the private `__age` attribute.
+
+Using private properties can help to prevent accidental modification or access to sensitive class data. It also allows the class to have better control over how the attribute is accessed and modified, by providing methods that can validate the values or perform other necessary actions before setting or returning the attribute value.
+
+If we don't use private properties, then any code that has access to the object can directly modify or access its attributes, which can potentially cause unintended consequences and make the code harder to maintain.

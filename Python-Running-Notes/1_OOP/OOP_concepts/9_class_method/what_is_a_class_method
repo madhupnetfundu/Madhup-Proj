@@ -1,0 +1,43 @@
+Ref link: https: // youtu.be/Ej_02ICOIgs?t = 3255
+
+In object-oriented programming, a class method is a method that belongs to a class rather than an instance of the class. This means that it can be called on the class itself, rather than on an object or instance of the class. Class methods are used to modify the state of the class itself, rather than the state of individual instances.
+
+Class methods are defined using the `@classmethod` decorator in Python. They take the class itself as the first argument, conventionally named `cls`, instead of the instance of the class. This allows class methods to access and modify class-level attributes and variables.
+
+Here is an example of defining a class method in Python:
+
+```
+class MyClass:
+    x = 0
+    
+    @classmethod
+    def my_class_method(cls, a, b):
+        cls.x += 1
+        return a + b + cls.x
+
+print(MyClass.my_class_method(1, 2))
+```
+
+In this example, we define a class `MyClass` with a class method `my_class_method`. The method takes two arguments `a` and `b`, and returns their sum along with the value of the class-level attribute `x`, which is incremented by 1 for each call to the method. Since `my_class_method` is a class method, we can call it on the class itself (`MyClass.my_class_method(1, 2)`) rather than on an instance of the class.
+
+Class methods can be useful for defining methods that operate on the class itself, rather than individual instances. They can also be used to create alternative constructors for the class.
+
+Here's an example of using a class method as an alternative constructor:
+
+```
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    @classmethod
+    def from_birth_year(cls, name, birth_year):
+        age = 2023 - birth_year
+        return cls(name, age)
+
+person = Person.from_birth_year("Alice", 1990)
+print(person.name)  # Output: "Alice"
+print(person.age)   # Output: 33
+```
+
+In this example, we define a `Person` class with an alternative constructor `from_birth_year`. This method takes the person's name and birth year as arguments, calculates their age, and returns a new instance of the `Person` class. Since this method returns a new instance of the class, it's useful as an alternative constructor.

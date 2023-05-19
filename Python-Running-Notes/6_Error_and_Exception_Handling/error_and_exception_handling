@@ -1,0 +1,67 @@
+## Links 
+https://realpython.com/courses/introduction-python-exceptions/ <br>
+https://realpython.com/python-exceptions/#the-try-and-except-block-handling-exceptions <br>
+https://realpython.com/courses/raising-handling-exceptions/ <br>
+
+## Examples 
+
+Sure! Here are some illustrative examples for error and exception handling in Python:
+
+1. Catching a ZeroDivisionError:
+
+```
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Error: Division by zero")
+```
+
+In this example, we attempt to divide 10 by 0 which raises a ZeroDivisionError. We then use a try-except block to catch the exception and print a custom error message.
+
+2. Catching multiple exceptions:
+
+```
+try:
+    file = open("myfile.txt", "r")
+    text = file.read()
+    number = int(text)
+except FileNotFoundError:
+    print("Error: File not found")
+except ValueError:
+    print("Error: Invalid integer value")
+```
+
+In this example, we attempt to read an integer value from a file. If the file is not found or if the value is not an integer, we catch the corresponding exceptions and print a custom error message.
+
+3. Raising an exception:
+
+```
+def divide_numbers(a, b):
+    if b == 0:
+        raise ValueError("Error: Division by zero")
+    return a / b
+
+try:
+    result = divide_numbers(10, 0)
+except ValueError as e:
+    print(e)
+```
+
+In this example, we define a function that takes two arguments and raises a ValueError exception if the second argument is zero. We then use a try-except block to catch the exception and print the error message.
+
+4. Cleaning up after an exception:
+
+```
+try:
+    file = open("myfile.txt", "r")
+    text = file.read()
+    number = int(text)
+except FileNotFoundError:
+    print("Error: File not found")
+except ValueError:
+    print("Error: Invalid integer value")
+finally:
+    file.close()
+```
+
+In this example, we attempt to read an integer value from a file. If the file is not found or if the value is not an integer, we catch the corresponding exceptions and print a custom error message. We then use a finally block to ensure that the file is closed regardless of whether an exception was raised or not.

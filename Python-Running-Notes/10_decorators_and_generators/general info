@@ -1,0 +1,85 @@
+## Links
+https://realpython.com/lessons/decorators-course-introduction-and-overview/
+https://realpython.com/courses/python-decorators-101/ 
+https://realpython.com/primer-on-python-decorators/ 
+https://realpython.com/introduction-to-python-generators/  
+
+Decorators and generators are two powerful features in Python that can enhance the functionality and efficiency of code.
+
+Decorators are functions that modify the behavior of other functions. In other words, decorators are functions that take another function as an argument and return a modified version of that function. Decorators are typically used to modify the behavior of a function without actually modifying the function itself. Decorators are implemented using the '@' symbol followed by the name of the decorator function.
+
+Here's an example of a decorator that prints the time taken to execute a function:
+
+```
+import time
+
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"Time taken to execute function '{func.__name__}': {end_time - start_time:.4f} seconds")
+        return result
+    return wrapper
+
+@timing_decorator
+def my_function():
+    time.sleep(1)
+```
+
+Generators, on the other hand, are functions that use the 'yield' keyword to return a generator object. A generator is a type of iterator that generates a sequence of values on the fly. Unlike lists or tuples, which generate all their values at once, generators generate their values lazily, i.e., one value at a time. This makes generators very memory-efficient, especially for large datasets.
+
+Here's an example of a generator that generates the Fibonacci sequence:
+
+```
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+fib = fibonacci()
+for i in range(10):
+    print(next(fib))
+```
+
+This will output the first 10 numbers of the Fibonacci sequence. The generator function 'fibonacci' generates the Fibonacci sequence lazily, and the 'for' loop iterates over the first 10 values. The 'next()' function is used to get the next value from the generator object.
+
+## Examples
+Sure, here are some more examples of decorators and generators in Python:
+
+1. Decorator Example:
+
+```
+def my_decorator(func):
+    def wrapper():
+        print("Before the function is called.")
+        func()
+        print("After the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+```
+
+In this example, `my_decorator` is a function that takes another function (`func`) as an argument and returns a new function (`wrapper`) that wraps the original function (`func`). The `wrapper` function adds some extra behavior before and after the original function is called. The `@my_decorator` syntax is used to apply the `my_decorator` function to the `say_hello` function.
+
+2. Generator Example:
+
+```
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+fib = fibonacci()
+
+for i in range(10):
+    print(next(fib))
+```
+
+In this example, `fibonacci` is a generator function that yields the next number in the Fibonacci sequence each time it is called. The `yield` keyword is used to return a value from the function without terminating it. The `fib` variable is assigned to the generator object returned by the `fibonacci` function. The `next` function is used to iterate through the generator and print the first 10 numbers in the Fibonacci sequence.

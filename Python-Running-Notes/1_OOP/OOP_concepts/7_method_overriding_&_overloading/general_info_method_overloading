@@ -1,0 +1,25 @@
+Method overloading is a feature of object-oriented programming that allows a class to define multiple methods with the same name but different parameters. This can be useful when we want to perform the same operation on different types of inputs, or when we want to provide a default value for an optional parameter.
+
+However, unlike some other programming languages, Python does not support method overloading in the traditional sense. Instead, we can achieve similar functionality by using default arguments or by using the `*args` and `**kwargs` syntax to allow for variable-length arguments.
+
+Here's an example to illustrate method overloading in Python using default arguments:
+
+```python
+class Calculator:
+    def add(self, x, y):
+        return x + y
+
+    def add(self, x, y, z=0):
+        return x + y + z
+
+# Create a calculator object
+calc = Calculator()
+
+# Call the add method with different numbers of arguments
+print(calc.add(1, 2))     # Output: 3
+print(calc.add(1, 2, 3))  # Output: 6
+```
+
+In this example, we define a `Calculator` class with two `add` methods. The first method takes two arguments and returns their sum, while the second method takes three arguments (with the third being optional, since it has a default value of 0) and returns their sum. When we create an instance of the `Calculator` class and call the `add` method with different numbers of arguments, we get different outputs depending on which method is called.
+
+Method overloading can be a useful tool for creating more flexible and expressive code, but it's important to use it judiciously and to avoid creating methods with overly complex or ambiguous signatures. In Python, we can achieve similar functionality using default arguments or variable-length arguments, so it's often not necessary to use method overloading in the traditional sense.

@@ -1,0 +1,44 @@
+Setters and getters are methods that allow controlled access to object attributes. In Python, they are typically implemented using the `@property` and `@<attribute_name>.setter` decorators.
+
+A setter method allows us to update the value of an attribute, while enforcing certain rules and restrictions. For example, if we have a `Circle` class with a `radius` attribute, we might want to ensure that the radius is never negative. We can use a setter method to enforce this rule:
+
+```python
+class Circle:
+    def __init__(self, radius):
+        self._radius = radius
+        
+    # Setter method
+    @property
+    def radius(self):
+        return self._radius
+    
+    @radius.setter
+    def radius(self, value):
+        if value < 0:
+            raise ValueError("Radius cannot be negative")
+        self._radius = value
+```
+
+Here, the `radius` method is defined as a property using the `@property` decorator. This allows us to access the `radius` attribute as if it were a regular attribute, using dot notation (`c.radius`). However, we can also provide a setter method for the `radius` attribute using the `@radius.setter` decorator. This method will be called whenever we attempt to update the value of the `radius` attribute.
+
+A getter method, on the other hand, allows us to access the value of an attribute, while potentially adding additional logic or processing. For example, suppose we have a `Temperature` class with a `celsius` attribute. We might want to provide a `fahrenheit` property that converts the temperature to Fahrenheit:
+
+```python
+class Temperature:
+    def __init__(self, celsius):
+        self._celsius = celsius
+        
+    # Getter method
+    @property
+    def celsius(self):
+        return self._celsius
+    
+    # Property that returns the temperature in Fahrenheit
+    @property
+    def fahrenheit(self):
+        return (self.celsius * 9/5) + 32
+```
+
+Here, the `fahrenheit` method is defined as a property using the `@property` decorator. This allows us to access the `fahrenheit` property as if it were a regular attribute, using dot notation (`t.fahrenheit`). However, the value of the `fahrenheit` property is actually calculated based on the `celsius` attribute. By using a getter method, we can provide this additional logic transparently to the user of the class, without them needing to manually calculate the Fahrenheit temperature themselves.
+
+Overall, setters and getters provide a way to control access to object attributes, while enforcing certain rules and adding additional logic or processing as needed.

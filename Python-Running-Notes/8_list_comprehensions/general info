@@ -1,0 +1,69 @@
+## Links 
+https://realpython.com/courses/understand-list-comprehensions/ 
+https://realpython.com/lessons/how-format-your-list-comprehensions/ 
+https://realpython.com/courses/using-list-comprehensions-effectively/ 
+
+<br><br>
+
+## Examples
+List comprehension is a concise and readable way to create lists in Python. It allows you to create a new list by performing operations on each item of an existing iterable (like a list, tuple, or string) and filtering the results based on some condition.
+
+Here is an example of list comprehension to create a new list of squares of numbers from 1 to 10:
+
+```
+squares = [x**2 for x in range(1, 11)]
+print(squares)  # output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+
+In the above example, the list comprehension `[x**2 for x in range(1, 11)]` takes each item `x` from the iterable `range(1, 11)`, squares it using the expression `x**2`, and creates a new list `squares` containing the results.
+
+Here is another example of list comprehension to create a new list of even numbers from an existing list:
+
+```
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evens = [x for x in numbers if x % 2 == 0]
+print(evens)  # output: [2, 4, 6, 8, 10]
+```
+
+In the above example, the list comprehension `[x for x in numbers if x % 2 == 0]` takes each item `x` from the iterable `numbers`, checks if it is even using the condition `x % 2 == 0`, and creates a new list `evens` containing only the even numbers.
+
+Here are some more examples of list comprehension in Python:
+
+1. Squaring numbers from 1 to 10:
+```
+squares = [x*x for x in range(1, 11)]
+print(squares)
+```
+Output: `[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]`
+
+2. Generating a list of even numbers from 1 to 20:
+```
+evens = [x for x in range(1, 21) if x % 2 == 0]
+print(evens)
+```
+Output: `[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]`
+
+3. Creating a list of strings by concatenating two lists of strings:
+```
+colors = ['red', 'green', 'blue']
+fruits = ['apple', 'banana', 'orange']
+color_fruit_pairs = [color + '-' + fruit for color in colors for fruit in fruits]
+print(color_fruit_pairs)
+```
+Output: `['red-apple', 'red-banana', 'red-orange', 'green-apple', 'green-banana', 'green-orange', 'blue-apple', 'blue-banana', 'blue-orange']`
+
+4. Flattening a list of lists:
+```
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flat_list = [item for row in matrix for item in row]
+print(flat_list)
+```
+Output: `[1, 2, 3, 4, 5, 6, 7, 8, 9]`
+
+5. Filtering a list of numbers to remove values less than 5:
+```
+numbers = [3, 8, 4, 6, 1, 9, 2]
+filtered_numbers = [x for x in numbers if x >= 5]
+print(filtered_numbers)
+```
+Output: `[8, 6, 9]`

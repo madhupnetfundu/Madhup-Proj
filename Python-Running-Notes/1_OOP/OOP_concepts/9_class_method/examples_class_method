@@ -1,0 +1,54 @@
+Here are a few more examples of class methods in Python:
+
+Example 1: Using class methods to count the number of instances of a class
+```
+
+
+class Person:
+    count = 0
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        Person.count += 1
+
+    @classmethod
+    def get_count(cls):
+        return cls.count
+
+
+person1 = Person("Alice", 25)
+person2 = Person("Bob", 30)
+print(Person.get_count())  # Output: 2
+```
+
+In this example, we define a `Person` class with an instance variable `count` that keeps track of the number of instances of the class . We use a class method `get_count` to retrieve the count of instances. When an instance of `Person` is created, the `__init__` method is called, which increments the `count` variable by 1.
+
+
+Example 2: Using class methods to create a singleton pattern
+```
+
+
+class Singleton:
+    instance = None
+
+    def __init__(self):
+        if Singleton.instance is not None:
+            raise Exception("Singleton instance already exists!")
+        Singleton.instance = self
+
+    @classmethod
+    def get_instance(cls):
+        if Singleton.instance is None:
+            Singleton()
+        return Singleton.instance
+
+
+singleton1 = Singleton.get_instance()
+singleton2 = Singleton.get_instance()
+print(singleton1 == singleton2)  # Output: True
+```
+
+In this example, we define a `Singleton` class that allows only one instance to be created. We use a class method `get_instance` to create an instance of the class . The `__init__` method checks whether an instance of the class has already been created, and raises an exception if it has. The `get_instance` method checks whether an instance of the class exists, and creates one if it doesn't. The `get_instance` method then returns the instance.
+
+When `singleton1` and `singleton2` are created using the `get_instance` method, they refer to the same instance of the class , since the `__init__` method has already been called and set the `instance` variable to the first instance created.

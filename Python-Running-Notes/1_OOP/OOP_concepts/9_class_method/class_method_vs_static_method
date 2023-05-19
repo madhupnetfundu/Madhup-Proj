@@ -1,0 +1,46 @@
+Compare and contrast the use cases for class methods and static methods.
+
+In Python, both class methods and static methods are used to define methods that are bound to a class instead of an instance. However, there are some key differences between the two, which determine their use cases:
+
+1. ** Accessing class variables**: Class methods can access and modify class variables, whereas static methods cannot. If you need to modify or retrieve class variables within a method, you should use a class method.
+
+2. ** Accessing instance variables**: Class methods do not have access to instance variables, whereas static methods do not have access to either instance variables or class variables. If you need to access instance variables or perform operations that are specific to an instance, you should use an instance method.
+
+3. ** Method parameters**: Class methods take the class itself as the first parameter(usually named `cls`), whereas static methods do not take any implicit parameters. If you need to access or modify class variables, you should use a class method. If you do not need to access or modify class variables, you can use a static method.
+
+4. ** Inheritance**: Class methods can be overridden in a subclass, whereas static methods cannot. If you need to override a method in a subclass, you should use a class method.
+
+In general, use class methods when you need to modify or retrieve class variables, and use static methods when you need to define a method that is bound to a class but does not depend on any instance or class variables. Here's an example that demonstrates the use cases for both types of methods:
+
+```
+
+
+class MyClass:
+    count = 0
+
+    def __init__(self):
+        MyClass.count += 1
+
+    @classmethod
+    def get_count(cls):
+        return cls.count
+
+    @staticmethod
+    def is_even(number):
+        return number % 2 == 0
+
+
+# Using class methods
+print(MyClass.get_count())  # Output: 0
+my_obj1 = MyClass()
+my_obj2 = MyClass()
+print(MyClass.get_count())  # Output: 2
+
+# Using static methods
+print(MyClass.is_even(3))   # Output: False
+print(MyClass.is_even(4))   # Output: True
+```
+
+In this example, we define a `MyClass` with a class variable `count`, and two methods: `get_count` and `is_even`. `get_count` is a class method that returns the count of instances of the class , while `is_even` is a static method that checks whether a given number is even.
+
+When we call `get_count`, we access the class variable `count` through the `cls` parameter. When we call `is_even`, we do not access any instance or class variables, so we define it as a static method.

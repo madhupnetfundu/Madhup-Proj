@@ -9,7 +9,7 @@ class TwoNodeLoadScenario:
         if not (0 <= load_percentage <= 100):
             raise ValueError("load_percentage must be between 0 and 100")
         if cores_per_vm not in [4, 8, 12]:
-            raise ValueError("cores_per_vm must be either 4 or 8 or 12")
+            raise ValueError("cores_per_vm must be either 4 or 8 or 12")  ##### https://www.tutorialsteacher.com/python/error-types-in-python 
         self.load_percentage = load_percentage
         self.cores_per_vm = cores_per_vm
 

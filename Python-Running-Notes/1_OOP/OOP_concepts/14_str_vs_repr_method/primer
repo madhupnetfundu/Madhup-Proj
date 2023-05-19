@@ -1,0 +1,33 @@
+### Refer these links:
+https://realpython.com/python-repr-vs-str/  
+&  
+https://www.youtube.com/watch?v=FIaPZXaePhw
+
+The `str` and `repr` methods serve different purposes and are used in different contexts.
+
+The `str` method is used to return a user-friendly string representation of an object. It is intended to be used for display purposes and should contain information that is easy for humans to understand. The `str` method is used by the `print()` function and by the `str()` function.
+
+The `repr` method, on the other hand, is used to return a string representation of an object that can be used to recreate the object. It is intended to be used for debugging purposes and should contain all the information needed to recreate the object. The `repr` method is used by the `repr()` function and is also displayed when an object is entered on the Python console.
+
+Here is an example that demonstrates the use of `str` and `repr` methods:
+
+```python
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+    def __str__(self):
+        return f'Point({self.x}, {self.y})'
+    
+    def __repr__(self):
+        return f'Point({self.x}, {self.y})'
+
+p = Point(1, 2)
+print(str(p))  # Output: Point(1, 2)
+print(repr(p)) # Output: Point(1, 2)
+```
+
+In this example, we define a `Point` class with `str` and `repr` methods. The `str` method returns a user-friendly string representation of the `Point` object, while the `repr` method returns a string representation that can be used to recreate the object.
+
+Generally, you should provide a `str` method for your class if you want to provide a user-friendly representation of the object, and a `repr` method if you want to provide a complete and unambiguous representation of the object that can be used for debugging purposes.

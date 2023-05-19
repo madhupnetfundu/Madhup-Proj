@@ -1,0 +1,52 @@
+In Python, dunder methods are special methods that are defined with double underscores on either side of the method name (e.g. `__init__`, `__str__`, `__add__`). These methods have a special meaning and are used to define various built-in behaviors and operations of Python classes. Here are a few examples to illustrate the use of dunder methods:
+
+Example 1: `__init__`
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person = Person("Alice", 30)
+```
+
+In this example, `__init__` is a dunder method that is used to initialize the `Person` object with a `name` and `age` attribute. Whenever a new instance of the `Person` class is created, the `__init__` method is automatically called and sets the values of the object's attributes.
+
+Example 2: `__str__`
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def __str__(self):
+        return f"{self.name} ({self.age})"
+
+person = Person("Alice", 30)
+print(person)  # Output: Alice (30)
+```
+
+In this example, `__str__` is a dunder method that is used to define a string representation of the `Person` object. When the `print` statement is executed, it calls the `__str__` method to get a string representation of the object, which is then printed to the console.
+
+Example 3: `__add__`
+
+```python
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+
+v1 = Vector(1, 2)
+v2 = Vector(3, 4)
+v3 = v1 + v2
+print(v3.x, v3.y)  # Output: 4 6
+```
+
+In this example, `__add__` is a dunder method that is used to define the addition operator (`+`) for the `Vector` class. When the `+` operator is used with two `Vector` objects, it calls the `__add__` method and returns a new `Vector` object with the added values of the two vectors.
+
+Overall, dunder methods are a powerful tool in Python that allows for the customization and extension of built-in behaviors and operations of Python classes. They can be used to define how objects are created, represented, compared, and interacted with, among other things.

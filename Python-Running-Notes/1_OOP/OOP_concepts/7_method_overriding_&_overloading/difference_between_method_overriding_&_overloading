@@ -1,0 +1,14 @@
+Method overriding and method overloading are both object-oriented programming concepts that allow us to define methods with the same name but different behavior. However, they differ in how they achieve this and in what contexts they are used.
+
+Method overriding is a feature that allows a subclass to provide its own implementation of a method that is already defined in its superclass. This can be useful when we want to modify or extend the behavior of a method in the subclass without having to modify the superclass itself. Method overriding is achieved by defining a method with the same name and signature in the subclass as in the superclass, and then providing a new implementation of the method in the subclass. When the method is called on an object of the subclass, the implementation in the subclass is executed instead of the implementation in the superclass.
+
+Method overloading, on the other hand, is a feature that allows a class to define multiple methods with the same name but different parameters. This can be useful when we want to perform the same operation on different types of inputs or when we want to provide default values for optional parameters. Method overloading is achieved by defining multiple methods with the same name but different parameter lists. When the method is called, the appropriate method is chosen based on the number and types of arguments passed to it.
+
+Here are some key differences between method overriding and method overloading:
+
+- Method overriding is used to modify or extend the behavior of a method in a subclass, while method overloading is used to define multiple methods with the same name but different parameters.
+- Method overriding requires a subclass to provide its own implementation of a method that is already defined in its superclass, while method overloading requires a class to define multiple methods with the same name but different parameter lists.
+- Method overriding is achieved by defining a method with the same name and signature in the subclass as in the superclass, and then providing a new implementation of the method in the subclass. Method overloading is achieved by defining multiple methods with the same name but different parameter lists.
+- Method overriding is used to provide a specialized implementation of a method in a subclass, while method overloading is used to provide multiple implementations of a method with different input types or default values.
+
+In Python, we don't have traditional method overloading since it allows the function to have different behavior, but with the same name. Instead, we can achieve similar functionality by using default arguments or by using the `*args` and `**kwargs` syntax to allow for variable-length arguments.

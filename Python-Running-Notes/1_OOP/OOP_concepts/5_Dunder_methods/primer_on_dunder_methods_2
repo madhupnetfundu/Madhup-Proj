@@ -1,0 +1,57 @@
+Sure, here are a few more examples of dunder methods in Python:
+
+Example 4: `__len__`
+
+```python
+class MyList:
+    def __init__(self, items):
+        self.items = items
+    
+    def __len__(self):
+        return len(self.items)
+
+my_list = MyList([1, 2, 3, 4])
+print(len(my_list))  # Output: 4
+```
+
+In this example, `__len__` is a dunder method that is used to define the `len()` built-in function for the `MyList` class. When the `len()` function is called on a `MyList` object, it calls the `__len__` method and returns the length of the list.
+
+Example 5: `__eq__`
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def __eq__(self, other):
+        if isinstance(other, Person):
+            return self.name == other.name and self.age == other.age
+        return False
+
+person1 = Person("Alice", 30)
+person2 = Person("Alice", 30)
+person3 = Person("Bob", 25)
+
+print(person1 == person2)  # Output: True
+print(person1 == person3)  # Output: False
+```
+
+In this example, `__eq__` is a dunder method that is used to define the equality operator (`==`) for the `Person` class. When the `==` operator is used with two `Person` objects, it calls the `__eq__` method and returns `True` if the `name` and `age` attributes of the two objects are equal.
+
+Example 6: `__getitem__`
+
+```python
+class MyList:
+    def __init__(self, items):
+        self.items = items
+    
+    def __getitem__(self, index):
+        return self.items[index]
+
+my_list = MyList([1, 2, 3, 4])
+print(my_list[0])  # Output: 1
+print(my_list[1])  # Output: 2
+```
+
+In this example, `__getitem__` is a dunder method that is used to define the indexing operator (`[]`) for the `MyList` class. When the indexing operator is used with a `MyList` object, it calls the `__getitem__` method and returns the item at the specified index in the list.

@@ -1,0 +1,50 @@
+In Python, the `property` decorator is a built-in function that is used to define and manage class properties. It allows you to define methods that can be accessed as attributes, without exposing the underlying implementation details. In other words, it allows you to define getter and setter methods for class attributes, which are accessed like regular attributes.
+
+The `property` decorator is typically used when you want to provide controlled access to a class attribute, rather than allowing direct access to the attribute. This can be useful in situations where you need to enforce certain constraints or perform validation before allowing access to the attribute. 
+
+Here's an example that demonstrates the use of `property` decorator:
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self._name = name
+        self._age = age
+
+    @property
+    def name(self):
+        print('Getting name...')
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        print('Setting name...')
+        self._name = value
+
+    @property
+    def age(self):
+        print('Getting age...')
+        return self._age
+
+    @age.setter
+    def age(self, value):
+        print('Setting age...')
+        if not isinstance(value, int):
+            raise ValueError('Age must be an integer')
+        self._age = value
+```
+
+In this example, we define a `Person` class with two properties: `name` and `age`. The `name` property has a getter and a setter method, which are defined using the `@property` and `@name.setter` decorators, respectively. The same applies for the `age` property.
+
+When we access the `name` property, the getter method is called, and when we assign a value to the `name` property, the setter method is called. Similarly, when we access the `age` property, the getter method is called, and when we assign a value to the `age` property, the setter method is called.
+
+Here are some common use cases for the `property` decorator:
+
+1. **Data validation**: By using the setter method, you can enforce certain constraints or perform validation before allowing access to a property. For example, you can check that a given age is a positive integer, or that a given name is a string.
+
+2. ** Computed properties**: You can define properties that are computed on-the-fly, based on other attributes of the class . For example, you could define a `full_name` property that concatenates the `first_name` and `last_name` attributes of a `Person` class .
+
+3. ** Backward compatibility**: In some cases, you may need to change the implementation of a class property while maintaining backward compatibility with existing code that uses the property. By using the `property` decorator, you can change the implementation of the property without affecting the syntax used to access the property.
+
+4. ** Data hiding**: By using the `_` convention to make an attribute private, and using a `@ property` decorator to provide controlled access to the attribute, you can effectively hide the implementation details of a class from external code.
+
+Overall, the `property` decorator provides a powerful tool for managing class properties in Python, allowing you to provide controlled access to attributes, enforce constraints, and maintain backward compatibility, all while hiding the implementation details of your class from external code.

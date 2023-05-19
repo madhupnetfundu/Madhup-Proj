@@ -1,0 +1,48 @@
+Here are some more examples of classes that use the `dataclass` decorator:
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Point:
+    x: float
+    y: float
+
+p = Point(1.0, 2.0)
+print(p)  # Output: Point(x=1.0, y=2.0)
+```
+
+In this example, the `Point` class has two attributes `x` and `y`. The `dataclass` decorator automatically generates a `__repr__` method that returns a string representation of the object.
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Rectangle:
+    width: float
+    height: float
+
+    def area(self):
+        return self.width * self.height
+
+r = Rectangle(2.0, 3.0)
+print(r.area())  # Output: 6.0
+```
+
+In this example, the `Rectangle` class has two attributes `width` and `height`, and a method `area` that calculates the area of the rectangle. The `dataclass` decorator still generates a default `__repr__` method.
+
+```python
+from dataclasses import dataclass
+from typing import List
+
+@dataclass
+class Student:
+    name: str
+    age: int
+    grades: List[int]
+
+s = Student('Alice', 20, [80, 90, 85])
+print(s.grades)  # Output: [80, 90, 85]
+```
+
+In this example, the `Student` class has three attributes `name`, `age`, and `grades`, where `grades` is a list of integers. The `dataclass` decorator automatically generates a default `__repr__` method and includes the `List` type hint for the `grades` attribute.

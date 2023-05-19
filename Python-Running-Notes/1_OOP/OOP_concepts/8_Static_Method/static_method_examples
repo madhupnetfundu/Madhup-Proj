@@ -1,0 +1,53 @@
+https: // www.youtube.com/watch?v = Ej_02ICOIgs & t = 3788s  --> you tube link 
+
+
+Sure, here are a few more examples of static methods in Python:
+
+Example 1:
+
+```
+class MathUtils:
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+    @staticmethod
+    def multiply(a, b):
+        return a * b
+
+print(MathUtils.add(3, 5))       # Output: 8
+print(MathUtils.multiply(3, 5))  # Output: 15
+```
+
+In this example, we define a `MathUtils` class with two static methods `add` and `multiply`. Both methods take two arguments and return the result of the corresponding mathematical operation. We can call these methods directly on the class without creating an instance of it.
+
+Example 2:
+
+```
+class StringUtils:
+    @staticmethod
+    def reverse_string(string):
+        return string[::-1]
+
+print(StringUtils.reverse_string("hello"))  # Output: "olleh"
+```
+
+In this example, we define a `StringUtils` class with a static method `reverse_string`. The method takes a string argument and returns its reverse. Since this method doesn't depend on any instance-specific state, it can be defined as a static method.
+
+Example 3:
+
+```
+class TemperatureConverter:
+    @staticmethod
+    def celsius_to_fahrenheit(celsius):
+        return celsius * 9 / 5 + 32
+
+    @staticmethod
+    def fahrenheit_to_celsius(fahrenheit):
+        return (fahrenheit - 32) * 5 / 9
+
+print(TemperatureConverter.celsius_to_fahrenheit(25))     # Output: 77.0
+print(TemperatureConverter.fahrenheit_to_celsius(77.0))  # Output: 25.0
+```
+
+In this example, we define a `TemperatureConverter` class with two static methods `celsius_to_fahrenheit` and `fahrenheit_to_celsius`. These methods convert temperature values between Celsius and Fahrenheit scales. Since these methods don't depend on any instance-specific state, they can be defined as static methods.

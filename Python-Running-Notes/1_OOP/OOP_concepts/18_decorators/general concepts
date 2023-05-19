@@ -1,0 +1,59 @@
+In Python, decorators are a way to modify or enhance the functionality of a function or a class without changing its source code. Decorators are implemented using the @ symbol followed by the name of the decorator function, which is then placed above the function or class that needs to be modified.
+
+When a decorated function is called, the decorator function is executed first, and its output is used as the new definition of the original function. This makes it easy to add new behavior to existing functions, without having to modify the original function.
+
+Decorators can be used for a variety of purposes, such as:
+
+1. Logging: Decorators can be used to log function calls, parameters, and return values for debugging purposes.
+
+2. Authentication and authorization: Decorators can be used to enforce authentication and authorization rules for sensitive functions.
+
+3. Caching: Decorators can be used to cache the results of a function to speed up its execution.
+
+4. Timing: Decorators can be used to time the execution of a function and report the results.
+
+5. Validation: Decorators can be used to validate the inputs and outputs of a function to ensure that they meet certain criteria.
+
+Here is an example of a simple decorator that adds a logging functionality to a function:
+
+```py
+def logger(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling function '{func.__name__}' with arguments {args}, {kwargs}")
+        result = func(*args, **kwargs)
+        print(f"Function '{func.__name__}' returned {result}")
+        return result
+    return wrapper
+
+@logger
+def add(x, y):
+    return x + y
+
+print(add(2, 3))
+```
+
+In this example, the `logger` function is a decorator that takes a function as input and returns a new function that wraps the original function with logging functionality. The `@logger` decorator is then applied to the `add` function, which causes it to be replaced with the wrapped version of the function that includes the logging statements.
+
+
+<br/><br/>
+
+## Another example
+Here is an example of a simple decorator that prints a message before and after the decorated function is called:
+```py
+def decorator(func):
+    def wrapper():
+        print("Before function is called")
+        func()
+        print("After function is called")
+    return wrapper
+
+@decorator
+def my_func():
+    print("Hello, world!")
+```
+
+In this example, we define a decorator function decorator that takes a function func as input and returns a new function wrapper. The wrapper function prints a message before and after calling func. We then apply the decorator function to our my_func function using the @decorator syntax.
+
+Now, when we call my_func(), Python will first call the decorator function with my_func as input, and decorator will return a new function wrapper. Python will then call wrapper(), which will print the "Before function is called" message, call my_func(), which will print "Hello, world!", and then print the "After function is called" message.
+
+Decorators are a powerful tool in Python that can be used for a variety of purposes, including logging, timing, caching, and more. They can also be used to modify the behavior of classes and methods, as well as functions.

@@ -1,0 +1,33 @@
+Youtube link : https://www.youtube.com/watch?v=vBH6GRJ1REM 
+
+`dataclass` is a Python 3.7+ decorator in the `typing` module that can be used to automatically generate boilerplate code for classes that primarily store data. It is intended to simplify the creation of classes that are used to represent simple data structures, such as records or structs.
+
+A class decorated with `dataclass` will have several default features automatically generated based on the class's attributes. These features include:
+
+- A default `__init__` method that takes arguments for each attribute
+- Default `__repr__`, `__eq__`, and `__hash__` methods based on the class's attributes
+- A `__post_init__` method that can be used to modify the object after initialization
+- A `__annotations__` attribute that provides type hints for the class's attributes
+- Default ordering and comparison methods based on the class's attributes
+
+Here is an example of a class that uses the `dataclass` decorator:
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Person:
+    name: str
+    age: int
+    email: str = None
+```
+
+In this example, the `Person` class has three attributes: `name`, `age`, and `email`. The `email` attribute is optional and has a default value of `None`. When the `dataclass` decorator is applied to the class, several default methods are automatically generated, including an `__init__` method that takes arguments for `name`, `age`, and `email`, and a `__repr__` method that returns a string representation of the object:
+
+```python
+>>> p = Person('Alice', 30)
+>>> p
+Person(name='Alice', age=30, email=None)
+```
+
+`dataclass` provides a simple way to create classes that primarily store data, without having to write a lot of boilerplate code. This can make your code more concise and easier to read and maintain.

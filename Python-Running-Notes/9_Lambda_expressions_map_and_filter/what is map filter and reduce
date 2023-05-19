@@ -1,0 +1,33 @@
+`map`, `filter`, and `reduce` are built-in functions in Python for performing common data manipulation tasks on iterables such as lists, tuples, and sets. 
+
+`map` applies a given function to each item in an iterable and returns a new iterable containing the results. For example:
+
+```
+# Using map to square each number in a list
+numbers = [1, 2, 3, 4]
+squared_numbers = map(lambda x: x ** 2, numbers)
+print(list(squared_numbers))  # Output: [1, 4, 9, 16]
+```
+
+`filter` applies a given function to each item in an iterable and returns a new iterable containing only the items for which the function returns `True`. For example:
+
+```
+# Using filter to get only the even numbers from a list
+numbers = [1, 2, 3, 4]
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+print(list(even_numbers))  # Output: [2, 4]
+```
+
+`reduce` applies a given function to the first two items in an iterable, then applies the same function to the result and the next item, and so on, until all items have been processed and a single result is returned. For example:
+
+```
+# Using reduce to find the product of all the numbers in a list
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+product = reduce(lambda x, y: x * y, numbers)
+print(product)  # Output: 24
+```
+
+Q.) Do these go only with lambda functions?
+No, `map`, `filter`, and `reduce` functions can be used with any functions, including lambda functions. The lambda functions are often used in combination with these functions because they allow for a quick and concise way to define simple functions on-the-fly. However, you can also use regular functions defined using the `def` keyword with these functions.

@@ -1,0 +1,29 @@
+I apologize for any confusion. Here's another example to clarify the difference between `str` and `repr` methods:
+
+```python
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        
+    def __str__(self):
+        return f'{self.make} {self.model} ({self.year})'
+    
+    def __repr__(self):
+        return f"Car('{self.make}', '{self.model}', {self.year})"
+```
+
+In this example, we have a `Car` class that has `str` and `repr` methods. The `str` method returns a string that is intended to be a human-readable description of the car, and the `repr` method returns a string that can be used to create an identical `Car` object.
+
+Now let's create a `Car` object and print its `str` and `repr` representations:
+
+```python
+my_car = Car('Tesla', 'Model S', 2022)
+print(str(my_car))  # Output: Tesla Model S (2022)
+print(repr(my_car)) # Output: Car('Tesla', 'Model S', 2022)
+```
+
+When we call `str(my_car)`, the `str` method of the `Car` class is called and returns a human-readable string that describes the car. When we call `repr(my_car)`, the `repr` method of the `Car` class is called and returns a string that can be used to create an identical `Car` object. 
+
+So in summary, the `str` method is intended to return a human-readable string that describes the object, while the `repr` method is intended to return a string that can be used to recreate the object.
