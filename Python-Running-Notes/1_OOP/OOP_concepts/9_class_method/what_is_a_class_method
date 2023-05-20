@@ -6,7 +6,7 @@ Class methods are defined using the `@classmethod` decorator in Python. They tak
 
 Here is an example of defining a class method in Python:
 
-```
+```python
 class MyClass:
     x = 0
     
@@ -24,7 +24,7 @@ Class methods can be useful for defining methods that operate on the class itsel
 
 Here's an example of using a class method as an alternative constructor:
 
-```
+```python
 class Person:
     def __init__(self, name, age):
         self.name = name

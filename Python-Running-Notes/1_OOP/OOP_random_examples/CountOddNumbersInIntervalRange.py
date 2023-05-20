@@ -48,7 +48,10 @@
 
 class Solution:
 
-    def __init__(self, low: int, high: int) -> int:
+    def __init__(self, low: int, high: int) -> int: 
+
+        # What does -> mean in Python function definitions?
+        #The -> (arrow) is used to annotate the return value for a function in Python 3.0 or later. It does not affect the program but is intend to be consumed by other users or libraries as documentation for the function.
         self.low = low
         self.high = high
         self.mylist = []

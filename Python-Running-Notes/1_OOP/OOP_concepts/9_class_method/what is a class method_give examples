@@ -1,0 +1,47 @@
+In Python, a `classmethod` is a method that belongs to a class rather than an instance of the class. It can be called on both the class itself and its instances. The primary difference between a regular instance method and a class method is that a class method receives the class as the first argument instead of the instance.
+
+Here's an example to demonstrate the usage of `classmethod`:
+
+```python
+class MyClass:
+    count = 0
+
+    def __init__(self):
+        MyClass.count += 1
+
+    def instance_method(self):
+        print("This is an instance method.")
+
+    @classmethod
+    def class_method(cls):
+        print("This is a class method.")
+        print("Class count:", cls.count)
+
+# Calling class method on the class itself
+MyClass.class_method()
+
+# Creating instances of the class
+obj1 = MyClass()
+obj2 = MyClass()
+
+# Calling class method on the instance
+obj1.class_method()
+
+# Calling instance method on the instance
+obj1.instance_method()
+```
+
+In the above example, we define a class `MyClass` that has a class variable `count`, an instance method `instance_method()`, and a class method `class_method()`. The `class_method()` is decorated with `@classmethod` to indicate that it is a class method.
+
+We can call the class method directly on the class `MyClass.class_method()`, and it can also be called on the instances `obj1.class_method()`. The class method has access to the class itself through the `cls` parameter. In this example, the class method prints the class count.
+
+On the other hand, the instance method `instance_method()` can only be called on instances of the class and does not have access to the class itself.
+
+Output:
+```
+This is a class method.
+Class count: 0
+This is a class method.
+Class count: 2
+This is an instance method.
+```

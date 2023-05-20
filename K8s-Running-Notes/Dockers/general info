@@ -21,6 +21,9 @@ docker rm: Remove a container.
 docker attach: Attach to a running container.
 docker logs: Show the logs for a container.
 docker exec: Run a command in a running container.
+docker stop -f $(docker ps -aq) ## stop all running containers 
+docker rm -f $(docker ps -aq) ## remove the stopped containers
+docker run -d --name webapp nginx:1.14-alpine        ## Run a container with the nginx:1.14-alpine image and name it webapp
 ````
 <br>
 
