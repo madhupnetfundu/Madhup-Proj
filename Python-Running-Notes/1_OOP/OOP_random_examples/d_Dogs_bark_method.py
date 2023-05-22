@@ -10,6 +10,7 @@ class Dog():
 
     def bark(self):
         print("WOOF! My name is {}".format(self.name))
+        
 
 
 my_dog = Dog('Lab', 'Frankie')

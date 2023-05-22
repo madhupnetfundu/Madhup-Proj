@@ -1,3 +1,4 @@
+# 🤩 
 class Item:
     def __init__(self, name: str, price: float, quantity=0):
         # Run validations to the received arguments

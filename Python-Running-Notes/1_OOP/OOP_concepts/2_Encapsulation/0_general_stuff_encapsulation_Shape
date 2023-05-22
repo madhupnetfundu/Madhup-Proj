@@ -45,7 +45,7 @@ class Shape:
 
 class Rectangle(Shape):
     def __init__(self, x, y, width, height):
-        super().__init__(x, y)
+        super().__init__(x, y)  ### super() function is used to give access to methods and properties of a parent or sibling class. The super() function returns an object that represents the parent class. By using the super() function, you do not have to use the name of the parent element, it will automatically inherit the methods and properties from its parent. Further refer to https://www.w3schools.com/python/ref_func_super.asp and the note at the bottom of this file.
         self.width = width
         self.height = height
 
@@ -71,3 +71,21 @@ for shape in shapes:
 In this example, the `Shape` class has a protected attribute `_x` and a protected method `_draw`. The `Rectangle` and `Circle` classes inherit from `Shape` and override the `draw` method with their own implementation. They can also access the protected attribute `_x` and the protected method `_draw`.
 
 The `shapes` list contains objects of both `Rectangle` and `Circle` types. When we call the `draw` method on each object in the loop, the correct implementation is dynamically bound based on the type of the object, and the protected attribute and method are accessed by the subclasses.
+
+
+
+super() related note: The super() keyword in the program you provided is used to call the parent class's constructor. In this case, the super() keyword is used to call the Shape class's constructor from the Rectangle and Circle classes.
+
+The super() keyword is useful when you want to inherit from a class and you want to make sure that the parent class's constructor is called. This is important because the parent class's constructor may do important initialization work that is necessary for the child class to work properly.
+
+In the program you provided, the Shape class's constructor initializes the _x and _y attributes. The Rectangle and Circle classes inherit from the Shape class, so they also have the _x and _y attributes. However, the Rectangle and Circle classes also have their own attributes, such as width and height for the Rectangle class and radius for the Circle class.
+
+When the Rectangle and Circle classes' constructors are called, the super() keyword is used to call the Shape class's constructor. This ensures that the _x and _y attributes are initialized before the Rectangle and Circle classes' own attributes are initialized.
+
+Here is a breakdown of what happens when the Rectangle and Circle classes' constructors are called:
+
+The super() keyword is used to call the Shape class's constructor.
+The _x and _y attributes are initialized in the Shape class's constructor.
+The width and height attributes are initialized in the Rectangle class's constructor.
+The radius attribute is initialized in the Circle class's constructor.
+The super() keyword is a powerful tool that can be used to inherit from classes and to ensure that the parent class's methods are called. However, it is important to note that the super() keyword is not always necessary. For example, if the parent class does not have a constructor, then the super() keyword is not necessary. In addition, if the parent class's constructor does not do any important initialization work, then the super() keyword is not necessary. In these cases, you can simply call the parent class's constructor directly. For example, if the Shape class did not have a constructor, then you could simply call the Rectangle and Circle classes' constructors directly without using the super() keyword. 
