@@ -12,9 +12,7 @@ In Python, both class methods and static methods are used to define methods that
 
 In general, use class methods when you need to modify or retrieve class variables, and use static methods when you need to define a method that is bound to a class but does not depend on any instance or class variables. Here's an example that demonstrates the use cases for both types of methods:
 
-```
-
-
+```python
 class MyClass:
     count = 0
 
@@ -32,8 +30,8 @@ class MyClass:
 
 # Using class methods
 print(MyClass.get_count())  # Output: 0
-my_obj1 = MyClass()
-my_obj2 = MyClass()
+my_obj1 = MyClass()         # Output: 1
+my_obj2 = MyClass()         # Output: 2
 print(MyClass.get_count())  # Output: 2
 
 # Using static methods

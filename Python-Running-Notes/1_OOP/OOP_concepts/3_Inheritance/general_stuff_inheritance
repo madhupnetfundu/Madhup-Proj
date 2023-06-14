@@ -1,4 +1,4 @@
-Sure, here are a few more examples of inheritance in Python:
+Here are a few more examples of inheritance in Python:
 
 Example 1: Vehicle Inheritance
 
@@ -20,29 +20,29 @@ class Vehicle:
 
 class Car(Vehicle):
     def __init__(self, make, model, year, num_wheels):
-        super().__init__(make, model, year)
+        super().__init__(make, model, year) # call the constructor of the base class
         self.num_wheels = num_wheels
 
     def start(self):
-        super().start()
+        super().start() # call the start() method of the base class
         print("Put the car in gear.")
 
     def stop(self):
-        super().stop()
+        super().stop() # call the stop() method of the base class
         print("Put the car in park.")
 
 
 class Motorcycle(Vehicle):
     def __init__(self, make, model, year, num_wheels):
-        super().__init__(make, model, year)
+        super().__init__(make, model, year) # call the constructor of the base class
         self.num_wheels = num_wheels
 
     def start(self):
-        super().start()
+        super().start() # call the start() method of the base class
         print("Pull the throttle.")
 
     def stop(self):
-        super().stop()
+        super().stop()  # call the stop() method of the base class
         print("Apply the brakes.")
 
 

@@ -12,3 +12,12 @@ Memorise this : https://www.udemy.com/course/complete-python-bootcamp/learn/lect
 https://www.tutorialspoint.com/python/python_classes_objects.htm 
 
 👉if the functions are created inside the class then they are called methods
+
+5️⃣ Python Metaclases
+https://realpython.com/courses/python-metaclasses/ 
+
+6️⃣ ChatGPT: Your Personal Python Coding Mentor
+https://realpython.com/chatgpt-coding-mentor-python/ 
+
+7️⃣ Python's .__call__() Method: Creating Callable Instances
+https://realpython.com/python-callable-instances/ 

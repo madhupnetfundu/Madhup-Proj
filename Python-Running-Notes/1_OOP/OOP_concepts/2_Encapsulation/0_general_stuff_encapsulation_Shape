@@ -74,7 +74,8 @@ The `shapes` list contains objects of both `Rectangle` and `Circle` types. When 
 
 
 
-super() related note: The super() keyword in the program you provided is used to call the parent class's constructor. In this case, the super() keyword is used to call the Shape class's constructor from the Rectangle and Circle classes.
+## super() related note: 
+The super() keyword in the program you provided is used to call the parent class's constructor. In this case, the super() keyword is used to call the Shape class's constructor from the Rectangle and Circle classes.
 
 The super() keyword is useful when you want to inherit from a class and you want to make sure that the parent class's constructor is called. This is important because the parent class's constructor may do important initialization work that is necessary for the child class to work properly.
 

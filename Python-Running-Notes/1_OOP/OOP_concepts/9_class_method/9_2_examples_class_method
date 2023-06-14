@@ -1,9 +1,7 @@
 Here are a few more examples of class methods in Python:
 
 Example 1: Using class methods to count the number of instances of a class
-```
-
-
+```Python
 class Person:
     count = 0
 
@@ -24,11 +22,12 @@ print(Person.get_count())  # Output: 2
 
 In this example, we define a `Person` class with an instance variable `count` that keeps track of the number of instances of the class . We use a class method `get_count` to retrieve the count of instances. When an instance of `Person` is created, the `__init__` method is called, which increments the `count` variable by 1.
 
+💡When the person2 line is executed, it will not start getting executed from the line where we declare the Person class. Instead, it will start getting executed from the __init__ method. The __init__ method is called when a new Person object is created, and it is responsible for initializing the object's attributes. In this case, the __init__ method will set the name of the Person object to Bob and the age of the Person object to 30.
+
+The Person class definition is only executed once, when the Person class is first defined. The __init__ method is executed each time a new Person object is created.
 
 Example 2: Using class methods to create a singleton pattern
-```
-
-
+```Python
 class Singleton:
     instance = None
 
@@ -44,8 +43,8 @@ class Singleton:
         return Singleton.instance
 
 
-singleton1 = Singleton.get_instance()
-singleton2 = Singleton.get_instance()
+singleton1 = Singleton.get_instance() # Output: Singleton instance created! 
+singleton2 = Singleton.get_instance() # Output: Singleton instance already exists!
 print(singleton1 == singleton2)  # Output: True
 ```
 

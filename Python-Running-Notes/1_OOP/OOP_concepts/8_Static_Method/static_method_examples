@@ -1,11 +1,12 @@
-https: // www.youtube.com/watch?v = Ej_02ICOIgs & t = 3788s  --> you tube link 
+# Links:
+https://www.youtube.com/watch?v=Ej_02ICOIgs&t=3788s  --> you tube link 
 
 
 Sure, here are a few more examples of static methods in Python:
 
 Example 1:
 
-```
+```python
 class MathUtils:
     @staticmethod
     def add(a, b):
@@ -23,7 +24,7 @@ In this example, we define a `MathUtils` class with two static methods `add` and
 
 Example 2:
 
-```
+```python
 class StringUtils:
     @staticmethod
     def reverse_string(string):
@@ -36,7 +37,7 @@ In this example, we define a `StringUtils` class with a static method `reverse_s
 
 Example 3:
 
-```
+```python
 class TemperatureConverter:
     @staticmethod
     def celsius_to_fahrenheit(celsius):
@@ -46,7 +47,7 @@ class TemperatureConverter:
     def fahrenheit_to_celsius(fahrenheit):
         return (fahrenheit - 32) * 5 / 9
 
-print(TemperatureConverter.celsius_to_fahrenheit(25))     # Output: 77.0
+print(TemperatureConverter.celsius_to_fahrenheit(25))    # Output: 77.0
 print(TemperatureConverter.fahrenheit_to_celsius(77.0))  # Output: 25.0
 ```
 

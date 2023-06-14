@@ -1,4 +1,4 @@
-Ref link: https: // youtu.be/Ej_02ICOIgs?t = 3255
+# Ref link: https://youtu.be/Ej_02ICOIgs?t=3255
 
 In object-oriented programming, a class method is a method that belongs to a class rather than an instance of the class. This means that it can be called on the class itself, rather than on an object or instance of the class. Class methods are used to modify the state of the class itself, rather than the state of individual instances.
 

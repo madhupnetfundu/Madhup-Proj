@@ -1,4 +1,5 @@
-Ref link: https: // www.youtube.com/watch?v = Ej_02ICOIgs & t = 4725s
+## Ref link: 
+https://www.youtube.com/watch?v=Ej_02ICOIgs&t=4725s
 
 
 In object-oriented programming (OOP), `super()` is a built-in function in Python that allows a subclass to call the methods of its parent class. It is used when a derived class overrides a method or constructor of the base class but still wants to use the implementation of the base class.
@@ -36,8 +37,8 @@ class Dog(Animal):
         self.breed = breed
 
 dog = Dog("Rover", "Golden Retriever")
-print(dog.name)   # Output: Rover
-print(dog.breed)  # Output: Golden Retriever
+print(dog.name)   # Output: Rover.  # Note: name is inherited from Animal class. Also, note that we don't need to pass self as an argument to super().__init__(). 
+print(dog.breed)  # Output: Golden Retriever. # Note: breed is specific to Dog class. # Note: name is inherited from Animal class. Also, note that we don't need to pass self as an argument to super().__init__().
 ```
 
 In this example, we have a base class `Animal` that has a constructor `__init__()` that takes a `name` parameter. The derived class `Dog` inherits from the `Animal` class and overrides the `__init__()` method with its own implementation that takes a `name` and `breed` parameter. However, before executing the overridden constructor, `super().__init__(name)` is used to call the constructor of the parent class, which initializes the `name` attribute inherited from the `Animal` class.

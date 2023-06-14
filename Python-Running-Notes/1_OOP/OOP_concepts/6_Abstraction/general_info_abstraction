@@ -45,7 +45,7 @@ Now let's try the same program using data abstraction:
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
-    @abstractmethod
+    @abstractmethod # decorator
     def area(self):
         pass
     

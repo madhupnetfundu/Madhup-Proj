@@ -21,8 +21,7 @@ class Person:
 
 person = Person("Alice", "123-45-6789")
 print(person.get_ssn())  # Output: 123-45-6789
-# Output: AttributeError: 'Person' object has no attribute '__ssn'
-print(person.__ssn)
+print(person.__ssn) # Output: AttributeError: 'Person' object has no attribute '__ssn'
 ```
 
 2. Code flexibility: Encapsulation allows you to change the internal details of a class without affecting the outside world. By encapsulating the class data and behavior, you can modify the internal implementation details without worrying about how it will affect the other parts of the code.
@@ -46,8 +45,8 @@ car = Car("Toyota", "Camry", "V6")
 print(car.get_engine())  # Output: V6
 
 # change the engine to a hybrid
-car.__engine = "Hybrid"
-print(car.get_engine())  # Output: V6 (no change)
+car.__engine = "Hybrid" 
+print(car.get_engine()) # Output: V6 (no change) 
 ```
 
 If we did not use encapsulation, and the attribute `__engine` was not private, then other parts of the code could directly modify it, which would make it more difficult to change the engine type without affecting other parts of the code.

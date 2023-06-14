@@ -5,10 +5,22 @@ https://realpython.com/python-logging/
 <br>
 [Python Logging: A Stroll Through the Source Code](https://realpython.com/python-logging-source-code/) --> advanced
 <br>
-[logging — Logging facility for Python](https://docs.python.org/3/library/logging.html)
+[logging — Logging facility for Python](https://docs.python.org/3/library/logging.html) --> official doc for logging
 <br>
-[Python logging tutorial: loggers, handlers, and formatters](https://www.youtube.com/watch?v=b4Ms4wxJuPg)
+[Python logging tutorial: loggers, handlers, and formatters](https://www.youtube.com/watch?v=b4Ms4wxJuPg) --> vid from Teclado
 <br>
+[logging — Logging facility for Python](https://docs.python.org/3/library/logging.html#logger-objects) --> logger objects & other info
+<br>
+[Python Logging Basics](https://www.loggly.com/ultimate-guide/python-logging-basics/)
+<br>
+[in-depth-python-logging](https://www.toptal.com/python/in-depth-python-logging) --> Good one
+
+Inputs from Libin: 
+```bash
+## Go through :
+escs-im\escs-im\escs-im-ops\escs-datacenter\common\python\common\logging.py
+escs-im\escs-im-ops\escs-datacenter\common\python\common\messages.py
+```
 
 ## Basic Info Regarding Logging
 

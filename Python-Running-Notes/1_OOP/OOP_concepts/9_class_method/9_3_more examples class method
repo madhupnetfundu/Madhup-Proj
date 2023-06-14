@@ -18,17 +18,22 @@ class MyClass:
         print("Class count:", cls.count)
 
 # Calling class method on the class itself
-MyClass.class_method()
+MyClass.class_method() 
+
+# Output: This is a class method.
+# Output: Class count: 0
 
 # Creating instances of the class
 obj1 = MyClass()
 obj2 = MyClass()
 
 # Calling class method on the instance
-obj1.class_method()
+obj1.class_method() 
+# Output: This is a class method.
+# Output: Class count: 2
 
 # Calling instance method on the instance
-obj1.instance_method()
+obj1.instance_method() # Output: This is an instance method.
 ```
 
 In the above example, we define a class `MyClass` that has a class variable `count`, an instance method `instance_method()`, and a class method `class_method()`. The `class_method()` is decorated with `@classmethod` to indicate that it is a class method.
@@ -40,8 +45,20 @@ On the other hand, the instance method `instance_method()` can only be called on
 Output:
 ```
 This is a class method.
-Class count: 0
+Class count: 0 # This is the class count printed by the class method. It is 0 because we haven't created any instances yet.
 This is a class method.
-Class count: 2
+Class count: 2 # This is the class count printed by the class method. It is 2 because we have created two instances of the class.
 This is an instance method.
 ```
+
+Explanation of the above output:
+
+* When MyClass.class_method() is called, it prints "This is a class method." and "Class count: 0". Since the class has not been instantiated yet, the initial value of count is 0.
+
+* After that, two instances of the class MyClass are created using obj1 = MyClass() and obj2 = MyClass(). The __init__() method is automatically called for each instance, incrementing the value of count by 1. Now count is equal to 2.
+
+* When obj1.class_method() is called, it prints "This is a class method." and "Class count: 2". Since obj1 is an instance of MyClass, the class method is called on the instance, but it still accesses the class variable count and displays the updated value.
+
+* Finally, obj1.instance_method() is called, which simply prints "This is an instance method." It is a regular instance method that operates on the instance itself and does not have any interaction with the class variable count.
+
+Therefore, the output reflects the execution of the class method on both the class and the instance, as well as the instance method on the instance.
