@@ -57,3 +57,6 @@ In this example, we define a decorator function decorator that takes a function 
 Now, when we call my_func(), Python will first call the decorator function with my_func as input, and decorator will return a new function wrapper. Python will then call wrapper(), which will print the "Before function is called" message, call my_func(), which will print "Hello, world!", and then print the "After function is called" message.
 
 Decorators are a powerful tool in Python that can be used for a variety of purposes, including logging, timing, caching, and more. They can also be used to modify the behavior of classes and methods, as well as functions.
+
+## Links ##
+https://realpython.com/courses/python-decorators-101/ 

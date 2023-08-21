@@ -1,6 +1,9 @@
 Link : https://www.youtube.com/watch?v=Ej_02ICOIgs&t=7554s
 
 Examples of polymorphism in Python:
+Polymorphic functions
+Polymorphic methods
+Polymorphic operators
 
 1. Polymorphic functions:
 In Python, functions can be polymorphic if they can accept arguments of different types and perform different operations based on the type of the argument. Here's an example:

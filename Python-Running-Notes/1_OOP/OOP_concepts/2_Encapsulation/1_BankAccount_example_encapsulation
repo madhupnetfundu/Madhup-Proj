@@ -37,7 +37,7 @@ account.withdraw(1000)  # Output: Withdrew 1000. New balance: 4000
 account.deposit(2000)   # Output: Deposited 2000. New balance: 6000
 
 # try to modify the private attribute __balance directly
-account.__balance = 10000
+account.__balance = 10000 # Output: No error, but this is not modifying the __balance attribute. A new attribute __balance is created and assigned the value 10000
 print(account.get_balance())  # Output: 6000
 ```
 

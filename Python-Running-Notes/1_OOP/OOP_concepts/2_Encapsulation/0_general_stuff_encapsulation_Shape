@@ -1,5 +1,9 @@
 Encapsulation is a fundamental concept in object-oriented programming that helps to hide the implementation details of a class from its users. In Python, encapsulation is typically achieved through the use of private and protected attributes and methods.
 
+Encacapsulation is of two types :
+1. Private attributes method
+2. Protected attributes method
+
 Here are a few examples of encapsulation in Python:
 
 1. Private attributes:
