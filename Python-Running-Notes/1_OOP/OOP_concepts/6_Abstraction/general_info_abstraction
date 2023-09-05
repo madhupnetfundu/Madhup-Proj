@@ -42,7 +42,7 @@ In this implementation, we have separate classes for each shape, `Circle` and `R
 Now let's try the same program using data abstraction:
 
 ```python
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod # Import the ABC and abstractmethod decorators
 
 class Shape(ABC):
     @abstractmethod # decorator

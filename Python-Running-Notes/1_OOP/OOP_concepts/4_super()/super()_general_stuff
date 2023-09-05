@@ -1,6 +1,5 @@
 ## Ref link: 
-https://www.youtube.com/watch?v=Ej_02ICOIgs&t=4725s
-
+https://www.youtube.com/watch?v=zS0HyfN7Pm4 
 
 In object-oriented programming (OOP), `super()` is a built-in function in Python that allows a subclass to call the methods of its parent class. It is used when a derived class overrides a method or constructor of the base class but still wants to use the implementation of the base class.
 

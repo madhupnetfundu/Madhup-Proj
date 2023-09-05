@@ -21,7 +21,7 @@ class Person:
 
 person = Person("Alice", "123-45-6789")
 print(person.get_ssn())  # Output: 123-45-6789
-print(person.__ssn) # Output: AttributeError: 'Person' object has no attribute '__ssn'
+print(person.__ssn) # Output: AttributeError: 'Person' object has no attribute '__ssn' # Note: the output is not "123-45-6789" since the attribute __ssn is private
 ```
 
 2. Code flexibility: Encapsulation allows you to change the internal details of a class without affecting the outside world. By encapsulating the class data and behavior, you can modify the internal implementation details without worrying about how it will affect the other parts of the code.
