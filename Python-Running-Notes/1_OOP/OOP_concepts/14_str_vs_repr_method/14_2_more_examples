@@ -1,4 +1,4 @@
-I apologize for any confusion. Here's another example to clarify the difference between `str` and `repr` methods:
+Example to clarify the difference between `str` and `repr` methods:
 
 ```python
 class Car:

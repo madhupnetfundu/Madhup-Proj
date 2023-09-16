@@ -79,7 +79,7 @@ In this example, we define an abstract class `UserInterface` that defines the me
 In both of these examples, abstraction allows us to create a common interface that can be implemented by multiple subclasses without needing to know the details of those subclasses. This makes our code more modular and extensible, and allows us to easily switch between different implementations without changing our code.
 
 ## Other use Cases
-Sure, here are some more examples of abstraction in programming:
+Here are some more examples of abstraction in programming:
 
 1. Database abstraction: A common use case for abstraction is database abstraction. A database abstraction layer hides the implementation details of database systems from application code, making it easier to switch from one database system to another. For example, a Python program that uses a database abstraction layer can be easily modified to work with PostgreSQL, MySQL, or another database system without needing to change the application code.
 
