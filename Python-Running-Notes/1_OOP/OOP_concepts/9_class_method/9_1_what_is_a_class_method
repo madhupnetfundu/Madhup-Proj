@@ -12,8 +12,8 @@ class MyClass:
     
     @classmethod
     def my_class_method(cls, a, b):
-        cls.x += 1
-        return a + b + cls.x
+        cls.x += 1 # Increment the class-level attribute `x` by 1
+        return a + b + cls.x # Return the sum of `a`, `b`, and `x`. `x` is a class-level attribute
 
 print(MyClass.my_class_method(1, 2))
 ```
