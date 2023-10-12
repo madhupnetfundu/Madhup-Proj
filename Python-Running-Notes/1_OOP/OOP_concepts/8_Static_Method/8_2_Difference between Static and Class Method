@@ -1,0 +1,51 @@
+Here is an example to appreciate the difference between static and class methods in Python in a single program:
+```Python
+class MyClass:
+    class_variable = 10
+
+    @staticmethod
+    def static_method():
+        print("This is a static method.")
+
+    @classmethod
+    def class_method(cls):
+        print("This is a class method.")
+        print(cls.class_variable)
+
+# Call the static method
+MyClass.static_method()
+
+# Call the class method
+MyClass.class_method()
+```
+
+Output:
+This is a static method.
+This is a class method.
+10
+
+The main difference between static and class methods is that static methods are not bound to the class or any of its instances, while class methods are bound to the class. This means that static methods cannot access or modify the class state, while class methods can.
+
+Another difference is that static methods do not take any special arguments, while class methods take the class itself as an implicit argument (usually named cls).
+
+In the above example, the static_method() method is a static method because it does not take any special arguments and does not access or modify the class state.
+
+The class_method() method is a class method because it takes the class itself as an implicit argument and accesses the class variable class_variable.
+
+To appreciate the difference between static and class methods, you can try calling them directly on a class instance:
+```Python
+my_class = MyClass()
+
+# Call the static method directly on a class instance
+my_class.static_method()
+
+# Call the class method directly on a class instance
+my_class.class_method()
+```
+This is a static method.
+This is a class method.
+10
+
+As you can see, both the static and class methods can be called directly on a class instance. However, the class method will still have access to the class state, even though it is called on an instance of the class.
+
+This is because class methods are bound to the class itself, not to any individual instance of the class.

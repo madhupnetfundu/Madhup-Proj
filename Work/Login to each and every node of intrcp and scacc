@@ -1,0 +1,37 @@
+#### INTRCP ####:
+CPS nodes:
+
+## Storage nodes##
+
+tl;dr: create maccess and execute the below command:
+```bash
+ssh -t madhups@100.96.48.21 ssh escsmamon@10.32.97.162 # make sure pagent is running
+```
+
+scaqan11celadm04 10.32.97.162
+scaqan11celadm05 10.32.97.163
+scaqan11celadm06 10.32.97.164
+
+    - create maccess
+    - ssh -t madhups@100.96.48.21 ssh escsmamon@10.32.97.162 # make sure pagent is running
+    - You can also login to the 100.96.48.21 host first:
+        ```bash
+        ssh madhups@100.96.48.21
+        ```
+        and then login to the storage node:
+        ```bash
+        ssh escsmamon@<storage node ip>
+        ```
+
+
+
+
+Compute nodes
+How to check the dbs for the long running canaries:
+
+
+#### SCACC ####:
+CPS nodes:
+Storage nodes
+Compute nodes
+How to check the dbs for the long running canaries:

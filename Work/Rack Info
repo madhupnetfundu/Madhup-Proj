@@ -1,0 +1,18 @@
+
+Good Links: 
+Exadata System Shapes
+https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/autonomous-database/doc/resource-limits-and-characteristics-infrastructure-shapes.html#ADBOR-GUID-351F38FE-4DBC-4CEF-9775-72C5804895CC
+
+Good Link:
+Exadata X9M-2 Systems
+https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/autonomous-database/doc/resource-limits-and-characteristics-infrastructure-shapes.html#GUID-D69A7895-9660-4F66-B64F-2A1847D880FB#ADBOR-GUID-D69A7895-9660-4F66-B64F-2A1847D880FB
+
+
+# Autonomous Database on Dedicated Exadata Infrastructure
+Autonomous Database on Dedicated Exadata Infrastructure is offered in the following Exadata System Shapes:
+Base System: Contains two database servers and three Oracle Exadata Storage Servers. A Base System is an entry-level configuration. Compared to other configurations, a Base System contains Oracle Exadata Storage Servers with significantly less storage capacity, and database servers with significantly less memory and processing power.
+Quarter Rack: Contains two database servers and three Oracle Exadata Storage Servers.
+Half Rack: Contains four database servers and six Oracle Exadata Storage Servers.
+Full Rack: Contains eight database servers and 12 Oracle Exadata Storage Servers.
+
+
