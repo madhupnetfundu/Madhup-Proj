@@ -18,8 +18,8 @@ It has become imperative to not miss out on Ansible and Terraform as well. MySql
 
 # Versatility is the Key for the next 30 days starting today (i.e 18th Oct, 2023)
 ## Python
-1. General Python programming SRE level.
-2. OOP concepts
+1. General Python programming SRE level. 1 hr.
+2. OOP concepts 1 hr.
 3. Practicising 1 & 2.
 
 

@@ -1,0 +1,58 @@
+chp1 :
+
+Kubernetes has a pluggable container runtime interface (CRI) that makes it easy to swap-out Docker for a different container runtime. In the future, Docker might be replaced by containerd as the default container runtime in Kubernetes. More on containerd later in the book, but for now it’s enough to know that containerd is the small specialized part of Docker that does the low-level tasks of starting and stopping containers.
+
+ There are at least three things to be aware of when referring to Docker as a technology:
+
+    The runtime
+    The daemon (a.k.a. engine)
+    The orchestrator
+
+<br>
+
+![](../K8s-Running-Notes-Images/Dockers_docker_arch.png)
+
+👉 The runtime operates at the lowest level and is responsible for starting and stopping containers (this includes building all of the OS constructs such as namespaces and cgroups). Docker implements a tiered runtime architecture with high-level and low-level runtimes that work together.
+
+The low-level runtime is called runc and is the reference implementation of Open Containers Initiative (OCI) runtime-spec. Its job is to interface with the underlying OS and start and stop containers. Every running container on a Docker node has a runc instance managing it.
+
+The higher-level runtime is called containerd. containerd does a lot more than runc. It manages the entire lifecycle of a container, including pulling images, creating network interfaces, and managing lower-level runc instances. containerd is pronounced “container-dee’ and is a graduated CNCF project used by Docker and Kubernetes as a container runtime.
+
+A typical Docker installation has a single containerd process (docker-containerd) controlling the runc (docker-runc) instances associated with each running container.
+
+The Docker daemon (dockerd) sits above containerd and performs higher-level tasks such as; exposing the Docker remote API, managing images, managing volumes, managing networks, and more…
+
+A major job of the Docker daemon is to provide an easy-to-use standard interface that abstracts the lower levels.
+
+
+<br>
+<br>
+💡Docker, Inc. is a technology company out of San Francisco with an ambition to change the way we do software. They were arguably the first-movers and instigators of the modern container revolution.
+
+The Docker technology focuses on running and managing application containers. It runs on Linux and Windows, can be installed almost anywhere, and is currently the most popular container runtime used by Kubernetes.
+
+The Open Container Initiative (OCI) was instrumental in standardizing the container runtime format and container image format.
+<br>
+<br>
+-------------------------------------------
+## Docker Engine
+The Docker engine is the core software that runs and manages containers. We often refer to it simply as Docker. If you know a thing or two about VMware, it might be useful to think of it as being like ESXi.
+
+The Docker engine is modular in design and built from many small specialised tools. Where possible, these are based on open standards such as those maintained by the Open Container Initiative (OCI).
+
+In many ways, the Docker Engine is like a car engine — both are modular and created by connecting many small specialized parts:
+
+    A car engine is made from many specialized parts that work together to make a car drive — intake manifolds, throttle body, cylinders, spark plugs, exhaust manifolds etc.
+    The Docker Engine is made from many specialized tools that work together to create and run containers — APIs, execution driver, runtimes, shims etc.
+
+At the time of writing, the major components that make up the Docker engine are; the Docker daemon, containerd, runc, and various plugins such as networking and storage. Together, these create and run containers.
+
+![](../K8s-Running-Notes-Images/Docker_engine.png)
+
+
+<br>
+## Command to restart the docker daemon in play-with-docker
+
+```bash
+kill -9 `pgrep dockerd`; dockerd > /docker.log 2>&1 &
+```
