@@ -91,11 +91,11 @@ Vagrant.configure("2") do |config|
 	## install vim, sysstat net-tools package for ifconfig command ##
 	echo;echo;echo
 	echo "#####################################################"	
-	echo "Installing vim, net-tools and sysstat"
+	echo "Installing vim, nmap-ncat, net-tools and sysstat"
 	echo "#####################################################"
-	yum install vim net-tools sysstat -y
+	yum install vim nmap-ncat net-tools sysstat -q -y
 	echo
-	echo "Installed vim, net-tools and sysstat"
+	echo "Installed vim, nmap-ncat, net-tools and sysstat"
 	
 	## add a sudo user madhups ##
 	echo;echo;echo
