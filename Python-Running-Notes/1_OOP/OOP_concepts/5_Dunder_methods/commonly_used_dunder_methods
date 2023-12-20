@@ -1,3 +1,5 @@
+Ref Link : https://www.tutorialsteacher.com/python/magic-methods-in-python 
+
 All the dunder methods in Python are important in their own way, but some of the most commonly used ones include:
 
 1. `__init__`: This is used to initialize an object's attributes when it is created.
