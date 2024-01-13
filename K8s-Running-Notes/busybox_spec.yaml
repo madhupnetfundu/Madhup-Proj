@@ -7,13 +7,6 @@ metadata:
 spec:
   containers:
   - name: busybox-container
-    imaapiVersion: v1
-kind: Pod
-metadata:
-  name: busybox-pod
-spec:
-  containers:
-  - name: busybox-container
     image: busybox
     command: ["sleep", "3600"]
     resources:
