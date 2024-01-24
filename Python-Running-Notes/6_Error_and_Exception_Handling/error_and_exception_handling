@@ -1,11 +1,26 @@
+💡In Python’s exception handling mechanism, the code inside an else clause executes when no exceptions come up in the try block. See this for example: https://realpython.com/python-exceptions/#the-else-clause <br>
+
+💡Remember the below points:
+![Python Exceptions.. Points to Remeber](../Python_Images/Python_Exception_Handling_Info.jpg) <br>
+
+Also Remember the below:
+![final point](../Python_Images/try_except_else_finally.jpg) <br>
+
+
 ## Links 
-https://realpython.com/courses/introduction-python-exceptions/ <br>
-https://realpython.com/python-exceptions/#the-try-and-except-block-handling-exceptions <br>
-https://realpython.com/courses/raising-handling-exceptions/ <br>
+Good one :
+Best one: https://realpython.com/python-exceptions/ <br>
+Raising and Handling Python Exceptions https://realpython.com/courses/raising-handling-exceptions/ <br>
+The Most Diabolical Python Antipattern: https://realpython.com/the-most-diabolical-python-antipattern/ <br>
+Getting the Most Out of a Python Traceback: https://realpython.com/courses/python-traceback/ <br>
+Understanding the Python Traceback: https://realpython.com/python-traceback/ <br>
+From Python docs link: https://docs.python.org/3/tutorial/errors.html# <br>
+
+
+
 
 ## Examples 
-
-Sure! Here are some illustrative examples for error and exception handling in Python:
+Here are some illustrative examples for error and exception handling in Python:
 
 1. Catching a ZeroDivisionError:
 
