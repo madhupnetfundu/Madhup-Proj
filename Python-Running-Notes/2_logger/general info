@@ -1,4 +1,20 @@
+### Watch out for the below points while using logging module in python:
+<br><br>
+![logger handler formatter](../Python_Images/logger_handler_formatter.jpg)
+<br><br><br><br><br><br>
+![logger handler formatter workflow](../Python_Images/logger_handler_formatter_workflow.jpg)
+<br><br>
+![basic config for logging](../Python_Images/logging_basic_config.jpg)
+<br><br>
+![log all events above DEBUG](../Python_Images/log%20all%20events%20above%20debug.jpg)
+<br><br>
+![filename_filemode_format](..//Python_Images/logging_filename_filemode_format.jpg)
+
+![fileConfig and dictConfig](../Python_Images/logging_fileConfig_DictConfig.jpg)
+
+<br><br>
 ## Links 
+[logging — Logging facility for Python_VVIP for api reference](https://docs.python.org/3/library/logging.html)
 https://realpython.com/lessons/logging-python-introduction/ --> vid 
 <br>
 https://realpython.com/python-logging/
@@ -9,12 +25,9 @@ https://realpython.com/python-logging/
 <br>
 [Python logging tutorial: loggers, handlers, and formatters](https://www.youtube.com/watch?v=b4Ms4wxJuPg) --> vid from Teclado
 <br>
-[logging — Logging facility for Python](https://docs.python.org/3/library/logging.html#logger-objects) --> logger objects & other info
-<br>
 [Python Logging Basics](https://www.loggly.com/ultimate-guide/python-logging-basics/)
 <br>
 [in-depth-python-logging](https://www.toptal.com/python/in-depth-python-logging) --> Good one
-<br>
 [Logging in Python: A Developer’s Guide](https://blog.sentry.io/logging-in-python-a-developers-guide/) --> Good one
 
 
