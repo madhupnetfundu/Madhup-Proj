@@ -1,8 +1,18 @@
 ## Links
+[Good one_an awesome Medium article regarding decorators](https://betterprogramming.pub/decorators-in-python-72a1d578eac4)
 https://realpython.com/lessons/decorators-course-introduction-and-overview/
 https://realpython.com/courses/python-decorators-101/ 
 https://realpython.com/primer-on-python-decorators/ 
 https://realpython.com/introduction-to-python-generators/  
+
+
+[Good one_Python Decorators in 1 Minute!](https://www.youtube.com/watch?v=BE-L7xu8pO4)
+
+[Good one_Class as decorator](https://www.geeksforgeeks.org/class-as-decorator-in-python/)
+
+[Good one_Python Decorators](https://www.udemy.com/course/complete-py*thon-bootcamp/learn/lecture/9516654#overview)
+
+![Decorators](../Python_Images/decorators_Python.jpg)
 
 Decorators and generators are two powerful features in Python that can enhance the functionality and efficiency of code.
 
