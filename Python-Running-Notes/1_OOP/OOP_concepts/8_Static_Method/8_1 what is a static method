@@ -1,3 +1,9 @@
+💡Remember: 
+1) A static method is a method that can be used anywhere that does not rely on the class.
+[Checkout this link](https://www.youtube.com/watch?v=PIKiHq1O9HQ)
+
+2) A static method does not know anything about the class or its objects.
+
 In object-oriented programming, a static method is a method that belongs to a class rather than an instance of the class. This means that it can be called on the class itself, rather than on an object or instance of the class.
 
 Static methods are defined using the `@staticmethod` decorator in Python. They are similar to regular methods in that they can access class-level attributes and variables, but they don't have access to instance-level attributes and variables, as they don't have an instance to operate on.
