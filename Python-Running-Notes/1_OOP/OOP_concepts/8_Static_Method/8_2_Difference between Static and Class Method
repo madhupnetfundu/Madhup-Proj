@@ -49,3 +49,6 @@ This is a class method.
 As you can see, both the static and class methods can be called directly on a class instance. However, the class method will still have access to the class state, even though it is called on an instance of the class.
 
 This is because class methods are bound to the class itself, not to any individual instance of the class.
+
+## Additional Resources: [Good One_class vs static methods](https://realpython.com/lessons/regular-instance-methods-vs-class-methods-vs-static-methods/)
+![classmethod and staticmethod](../../OOP_images/classmethod_staticmethod.jpg)
