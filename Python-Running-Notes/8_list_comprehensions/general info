@@ -1,7 +1,12 @@
+Syntax: <br>
+new_list1 = [expression for member in iterable] <br>
+new_list2 = [expression for member in iterable (if conditional)] <br>
+
 ## Links 
 https://realpython.com/courses/understand-list-comprehensions/ 
 https://realpython.com/lessons/how-format-your-list-comprehensions/ 
 https://realpython.com/courses/using-list-comprehensions-effectively/ 
+
 
 <br><br>
 
