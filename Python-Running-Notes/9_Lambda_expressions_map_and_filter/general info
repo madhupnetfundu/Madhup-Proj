@@ -1,7 +1,25 @@
-## Links 
+## Lambda 
 https://realpython.com/python-lambda/
 https://realpython.com/courses/python-lambda-functions/
 https://realpython.com/quizzes/python-lambda/ 
+
+## Map
+https://realpython.com/python-map-function/
+https://realpython.com/lessons/map-iterables-overview/
+
+
+
+# Lambda
+The following terms may be used interchangeably depending on the programming language type and culture:
+
+Anonymous functions
+Lambda functions
+Lambda expressions
+Lambda abstractions
+Lambda form
+Function literals
+Taken literally, an anonymous function is a function without a name. In Python, an anonymous function is created with the lambda keyword. More loosely, it may or not be assigned a name.
+
 
 In Python, a lambda expression is a way to create anonymous functions, which are functions without a name. Lambda functions are useful when we need to define a small, one-time-use function, without needing to define a named function using `def`.
 
