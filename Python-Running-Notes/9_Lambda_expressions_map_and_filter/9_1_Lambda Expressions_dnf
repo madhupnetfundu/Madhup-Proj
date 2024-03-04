@@ -1,0 +1,104 @@
+Note: dnf ==> do not forget
+
+A lambda function in Python is a small anonymous function that is defined using the `lambda` keyword, followed by a list of arguments, a colon, and an expression. The lambda function can take any number of arguments but can only have one expression.
+
+💡A lambda function can’t contain the return statement. In a lambda function, statements like return, pass, assert, or raise will raise a SyntaxError exception
+
+Here is the general syntax for a lambda function:
+
+```python
+lambda arguments: expression
+```
+
+- `lambda` is the keyword that defines the start of the function.
+- `arguments` are the parameters that the function takes.
+- `expression` is a single expression that is evaluated and returned when the function is called.
+<br>
+
+## Examples:
+1) A lambda function that adds two numbers could be written as follows:
+
+```python
+add = lambda x, y: x + y
+```
+
+You can call this function like any other function:
+
+```python
+result = add(5, 3)  # result is 8
+```
+
+
+In this case, `x` and `y` are the arguments, and `x + y` is the expression that gets evaluated and returned.
+
+
+2) A lambda function that multiplies three numbers could be written as follows: 
+```python
+multiply =  lambda x, y, z: x * y * z
+multiply(2, 3, 4)  # Output: 24
+```
+
+In this case, `x`, `y` and `z` are the arguments, and `x * y * z` is the expression that gets evaluated and returned.
+
+
+
+3) Default Values: You can also use default values for arguments in a lambda function, just like in a regular function:
+<br>
+
+a) 
+```python
+add = lambda x, y, z=3: x + y + z
+add(5, 3)  # Output: 11
+add(1,1,1) # Output: 3
+```
+
+b) 
+```python
+powered = lambda x, y=2: x ** y
+powered(5)  # Output: 25
+powered(5, 3)  # Output: 125
+```
+
+4) 
+a) Using key in sort() method (see [explanation from freecodecamp](https://www.freecodecamp.org/news/python-sort-how-to-sort-a-list-in-python/#key)):
+
+```python
+def second(x):
+    return x[1] # return the second element of the tuple
+
+a = [(1,2),(2,5),(3,1),(4,15)]
+# a.sort(key=second) # sort by second element. This is commented out because we are using lambda function below which does the same thing as this commented out function.
+
+a.sort(key=lambda x: x[1]) 
+'''
+This line of Python code is using the `sort` method to sort the list `a`. The `key` parameter is set to a lambda function, which is an anonymous, inline function.
+
+The lambda function takes an argument `x` and returns `x[1]`. This means that the sorting will be done based on the second element of each item in the list `a`.
+
+For example, if `a` is a list of tuples or lists, this line will sort `a` in ascending order based on the second element of each tuple or list. If `a` is a list of strings or other sequences, it will sort `a` based on the second character of each string or sequence.
+'''
+
+print (a)
+```
+<br>
+
+b) 
+```python
+list.sort(key=None, reverse=False) ## this is how sort is by default
+```
+
+- `key` is a function that takes one argument and returns a key to use for sorting.
+
+```python
+names = ['Alf Zed', 'Mike Mo', 'Steve Aardvark']
+names.sort(key=lambda x: x.split()[-1].lower())
+print(names)
+> ['Steve Aardvark', 'Mike Mo', 'Alf Zed']
+```
+
+<br><br>
+
+### `Lambda Reference Links:`
+https://realpython.com/python-lambda/ <br>
+https://realpython.com/courses/python-lambda-functions/ <br>
+https://www.freecodecamp.org/news/python-sort-how-to-sort-a-list-in-python/#key <br>
