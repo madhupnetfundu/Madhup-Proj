@@ -1,0 +1,68 @@
+## Vision
+	To be able to do the coding in my mind and free style on a text editor on all the concepts that I have come across so far now and shall come in future.
+	Deliver micro, small, medium, large and double XL projects from the concepts learned.
+	PLF (Put my L on the forehead of the best Python coder in my team)
+
+## Principles
+	Achieve every Vision above via micro to medium projects. 
+	Achieve PLF via large and double XL projects
+
+## Mission
+	Publish multiple white papers in Python.
+	Be a speaker at Pycon.
+	Always be job ready in Python.
+	Always be start up ready in Python.
+	- Python in multi cloud
+		AWS
+		Azure
+		GCP
+		OCI
+		Redhat	
+
+## Knowledge Milestones
+	- OOPs Python
+		PEIA (Polymorphism,.., Abstraction)
+		
+	
+	- Core Python Kachda Patti:
+		decorators
+		lambda expressions, map, filter and reduce
+		file related mgmt
+		error handling
+		assertion
+		args n kwargs
+		enum
+		isinstance
+		string manipulation
+	
+	- Modules:
+		sys
+		os
+		collections
+		urllib3
+		requests
+		configparser
+		subprocess
+		argparse
+		paramiko
+		pathlib
+		json
+		logging (log to a file and console using different handlers)
+		pdb
+		time and datetime module
+		functools
+		itertools
+	
+	- Libraries:
+			pandas
+			matplotlib
+			flask
+			django
+			numpy
+			
+	- DSA:
+		
+	- Practice, Practice, Practice
+		Hackerrank
+		GeeksforGeeks
+		Hackerearth
