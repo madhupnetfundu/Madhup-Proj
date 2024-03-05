@@ -1,5 +1,5 @@
 from functools import lru_cache
-from my_decorator import timer
+from my_decorator_dnf import timer
 
 #@lru_cache # This is the same as @cache, but it has a maximum size of 128. If the cache is full, it will discard the least recently used item.
 @lru_cache(maxsize=5) # This is how you can set the maximum size of the cache. If the cache is full, it will discard the least recently used item.
