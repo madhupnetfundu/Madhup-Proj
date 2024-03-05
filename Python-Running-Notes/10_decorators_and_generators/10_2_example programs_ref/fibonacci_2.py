@@ -1,7 +1,7 @@
 # The cache decorator is used to store the results of the function in a cache.
 # Next up, we'll see how to use the lru_cache decorator to store the results of the function in a cache. See fibonacci_3.py
 
-from my_decorator import timer
+from my_decorator_dnf import timer
 from functools import cache
 
 @cache
