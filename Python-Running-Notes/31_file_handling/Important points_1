@@ -1,0 +1,55 @@
+- Always use with open() to open a file.
+- You can use the os module or pathlib module to work with files and directories. 
+    - The os module is older and has more functions, while the pathlib module is newer and has a more object-oriented approach. 
+- You can use the shutil module to copy, move, or delete files and directories.
+- `os.mkdir()` and `os.makedirs()` are used to create directories. mkdirs is like mkdir -p in bash.
+- Use `pathlib.mkdir()` if you want to use the more objected oriented framework AND you only need to create one dir at a time. Use `os.mkdir()` if you need to create multiple directories or dir tree with sub dirs at once.
+
+
+-------------------
+### Basic directory listing functions
+
+With the os module: <br>
+- `os.listdir(dirname)` takes in a directory name as a string and
+returns a list of all of the files and subdirectories in that directory<br>
+- `os.scandir(dirname)` similar behavior to listdir, but returns an
+iterator of file objects rather than a list of strings. <br>
+
+With the pathlib module:<br>
+- `pathlib.Path.iterdir()` works on a path object and returns a similar iterator to scandir. <br>
+
+
+<br>
+
+-------------------
+### Useful functions for getting file information
+### With the os module: <br>
+- `os.stat(path_string)` takes in a file or directory path as a string and returns a stat_result object with the file data. <br>
+- `os.scandir(dirname)` — In the returned iterator, each object has a .stat() method that returns the same data as os.stat() <br>
+
+#### With the pathlib module:
+`pathlib.Path.iterdir()` — each item in the iterator has a
+.stat() method, just like in scandir
+
+<br>
+-------------------
+
+### Useful functions for making directories
+#### With the os module:
+- `os.mkdir(dir_name)` creates a single subdirectory with the given name
+- `os.makedirs(path_name)` creates full directory trees (including intermediate directories, as needed)
+
+#### With the pathlib module:
+- `pathlib.Path.mkdir()` creates a directory from the given Path object
+
+-------------------
+### Useful functions for deleting files
+#### With the os module:
+- `os.remove(file_path)` deletes a single file, raises FileNotFound if the file doesn’t exist
+- os.unlink(file_path) is essentially identical to os.remove
+
+#### With the pathlib module:
+- `pathlib.Path.unlink()` is identical to the os module options, except it operates on a Path object
+
+
+-------------------

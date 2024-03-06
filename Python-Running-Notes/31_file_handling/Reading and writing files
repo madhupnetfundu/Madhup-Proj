@@ -1,0 +1,101 @@
+https://realpython.com/courses/reading-and-writing-files-python/ <br>
+
+# Read and write files in Python
+- Python has several functions for creating, reading, updating, and deleting files.
+- The key function for working with files in Python is the `open()` function.
+- The `open()` function takes two parameters; filename, and mode.
+- There are four different methods (modes) for opening a file:
+    - "r" - Read - Default value. Opens a file for reading, error if the file does not exist
+    - "a" - Append - Opens a file for appending, creates the file if it does not exist
+    - "w" - Write - Opens a file for writing, creates the file if it does not exist
+    - "x" - Create - Creates the specified file, returns an error if the file exists
+- In addition you can specify if the file should be handled as binary or text mode
+    - "t" - Text - Default value. Text mode
+    - "b" - Binary - Binary mode (e.g. images)
+- To open a file for reading it is enough to specify the name of the file:
+    - `f = open("demofile.txt")`
+- The code above is the same as:
+    - `f = open("demofile.txt", "rt")`
+- Because "r" for read, and "t" for text are the default values, you do not need to specify them.
+- Note: Make sure the file exists, or else you will get an error.
+- To open the file, use the built-in `open()` function.
+- The `open()` function returns a file object, which has a `read()` method for reading the content of the file:
+    - `f = open("demofile.txt", "r")`
+    - `print(f.read())`     # Output: Hello! Welcome to demofile.txt
+- By default the `read()` method returns the whole text, but you can also specify how many characters you want to return:
+    - `f = open("demofile.txt", "r")`
+    - `print(f.read(5))`     # Output: Hello
+- You can return one line by using the `readline()` method: 
+    - `f = open("demofile.txt", "r")`
+    - `print(f.readline())`  # Output: Hello! Welcome to demofile.txt
+- By looping through the lines of the file, you can read the whole file, line by line:
+    - `f = open("demofile.txt", "r")`
+    - `for x in f:`
+    - `  print(x)`
+- The `open()` function takes two parameters; filename, and mode.
+
+-------------------------------
+Examples:
+1. Find a pattern in a file (for example grep for error in a log file):
+```python
+with open('file.txt', 'r') as file:
+    for line in file:
+        if 'error' in line:
+            print(line)
+```
+
+2. Write to a file:
+```python
+with open('file.txt', 'w') as file:
+    file.write('Hello, world!')
+```
+
+3. Read a file:
+```python
+with open('file.txt', 'r') as file:
+    print(file.read())
+```
+
+4. Append to a file:
+```python
+with open('file.txt', 'a') as file:
+    file.write('Hello, world!')
+```
+
+5. Read a file line by line:
+```python
+with open('file.txt', 'r') as file:
+    for line in file:
+        print(line)
+```
+
+6. Read a file line by line and print only the lines that contain the word "error":
+```python
+with open('file.txt', 'r') as file:
+    for line in file:
+        if 'error' in line:
+            print(line)
+```
+
+7. Delete a line from a file:
+```python
+# Deleting a specific line from a file
+def delete_line(original_file, line_number):
+    """This function deletes a specific line from a file"""
+    is_skipped = False
+    current_index = 1
+    with open(original_file, "r") as file:
+        lines = file.readlines()
+    with open(original_file, "w") as file:
+        for line in lines:
+            if current_index == line_number:
+                is_skipped = True
+                continue
+            else:
+                file.write(line)
+            current_index += 1
+    return is_skipped
+
+# Use the function
+delete_line('file.txt', 3)  # Deletes the 3rd line from file.txt
+```

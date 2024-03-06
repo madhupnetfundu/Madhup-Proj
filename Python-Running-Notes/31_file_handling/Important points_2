@@ -1,0 +1,50 @@
+
+### Useful functions for deleting directories
+#### Deleting a single directory:
+- `os.rmdir(dir_path)` deletes a single directory, raises OSError if the directory is non-empty
+● `pathlib.Path.rmdir()` is identical to os.rmdir(), except it operates on a Path object
+
+#### Deleting an entire directory tree:
+- shutil.rmtree(dir_path) deletes a directory and all of its contents, including subdirectories
+
+-------------------
+
+
+
+### Useful functions for filename matching
+- `.startswith()` and `.endswith()` both operate on strings and can be useful when dealing strictly with filenames
+- `fnmatch.fnmatch(file_name, unix_pattern)` takes in a
+filename and a Unix-style pattern string and returns whether the filename matches that pattern
+- `glob.glob(pattern)` takes in a search pattern and returns a list of the files in the current directory matching that pattern
+- `pathlib.Path.glob(pattern)` works just like glob, but operates on a Path object
+
+### Useful functions for directory traversal
+`os.walk(dirpath, topdown=True)` takes in a directory name and returns an iterator of (dirpath, dirnames, files) on each iteration
+
+-------------------
+
+### Temporary file constructors
+- `tempfile.TemporaryFile(mode)` creates and opens a temporary file in the specified mode 
+- `tempfile.TemporaryDirectory()` creates a temporary directory and returns it for use
+
+-------------------
+### Useful functions for copying and moving files
+#### Copying:
+- `shutil.copy(src, dst)` copies a file (but not its metadata) from the src path to the dst path — if you need the metadata, use `copy2`
+- `shutil.copytree(src_dir, dst_dir)` copies full directory trees
+
+#### Moving/Renaming:
+- `shutil.move(src, dst)` moves a file or directory from src to dst 
+- `os.rename(old, new)` renames a file or directory
+
+
+-------------------
+### Useful archive functions
+- `zipfile.Zipfile(zip_name, mode)` opens a zipfile in the desired mode — works a lot like opening any other kind of file
+- `zipfile.Zipfile().extract(filename)` extracts the given file from the zipfile (also see `extract_all`)
+- `shutil.make_archive(basename, format, root_dir)` makes an archive with the given parameters 
+- `shutil.unpack_archive(archive_name, extract_dir)` extracts the given archive into the given directory
+
+-------------------
+### The fileinput module
+- `fileinput.input([filenames])` takes all of the filenames from the filenames list (or sys.argv if no list is given) and makes them into one input stream that you can operate on. It also provides some information about each line in the output, like the line number, whether it’s the first line in its file, etc.

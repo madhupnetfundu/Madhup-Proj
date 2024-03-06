@@ -45,13 +45,16 @@
 		subprocess
 		argparse
 		paramiko
-		pathlib
+		pathlib VVIP
 		json
 		logging (log to a file and console using different handlers)
 		pdb
 		time and datetime module
-		functools
+		functools VVIP
 		itertools
+		tempfile VVIP
+		csv VVIP
+		dataclasses (advanced and VVIP)
 	
 	- Libraries:
 			pandas
