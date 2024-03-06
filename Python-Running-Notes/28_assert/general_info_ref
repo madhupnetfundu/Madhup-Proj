@@ -1,0 +1,66 @@
+Refer https://realpython.com/courses/python-assert-statement/ 
+
+What Are Assertions Good For?
+  - Debugging
+  - Ensure New Bugs Are Not Added
+  - Documenting
+  - Testing
+
+
+Checking Conditions
+  - Preconditions - Check Input is Valid
+  - Postconditions - Check Output is Valid
+
+
+The Syntax of the assert Statement
+
+`assert expression[, assertion_message]`
+
+  - `expression`: The condition you’d like to check. Expression is Tested For Truthiness
+  - If `expression` Is False , AssertionError is Raised
+  - `assertion_message` Is Optional, But Encouraged. It is an optional message that you can print if the condition is False
+
+
+💡Parentheses Not Needed to Group `expression` and `assertion_message`
+
+💡`AssertionError` Should Not Be Caught.
+     - Do Not Use try … except Blocks With AssertionError
+     - AssertionError Should Lead to Program Termination
+
+Disabling Assertions (as it impacts performance OR particularly when its not desirable)
+    python -O or python -OO
+    Setting The PYTHONOPTIMIZE Environment Variable
+
+![__debug__ values](../Python_Images/assert%20debug.png)
+
+<br>
+
+
+#### Development Workflow
+Normal : `__debug__` = True
+ -  Assertions Functional <br>
+ -  Development and Testing
+
+<br> 
+
+Optimized : `__debug__` = False <br>
+ -  Assertions Disabled
+ -  Production
+
+
+#### Running Python With the -O or -OO Options
+    -O : Removes assert statements
+    -OO : Removes assert statements and docstrings
+
+<br>
+
+#### Setting the PYTHONOPTIMIZE Environment Variable
+`PYTHONOPTIMIZE = "anything"` Is Equivalent to `python -O`
+
+
+Setting PYTHONOPTIMIZE To An Integer 
+
+| Value    | Equivalent |
+| -------- | -----------|
+|    1     | python -O  |
+|    2     | python -OO |
