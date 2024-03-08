@@ -2,6 +2,8 @@
 https://realpython.com/lessons/python-file-paths/
 https://realpython.com/courses/pathlib-python/ 
 https://realpython.com/read-write-files-python/
+https://learning.oreilly.com/library/view/automate-the-boring/9781098122584/xhtml/ch09.xhtml <br>
+
 
 # Python File Paths
 The `sys.path.append("../")` statement in Python adds the parent directory of the current directory to the `sys.path` variable. The `sys.path` variable is a list of directories that Python searches for modules when importing them. By adding the parent directory to the `sys.path` variable, you can import modules that are located in the parent directory of the current directory.
