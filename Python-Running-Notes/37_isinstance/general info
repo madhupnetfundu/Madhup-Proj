@@ -1,0 +1,21 @@
+The syntax of `isinstance()` is:<br>
+`isinstance(object, classinfo)`
+
+
+
+
+``Links``<br>
+https://www.geeksforgeeks.org/python-isinstance-method/<br> 
+https://www.programiz.com/python-programming/methods/built-in/isinstance <br>
+Good One: https://www.programiz.com/python-programming/examples/type-vs-instance <br>
+Good one: https://pynative.com/python-isinstance-explained-with-examples/ <br>
+
+
+```python
+class MyClass:
+    pass
+
+my_instance = MyClass()
+
+print(isinstance(my_instance, MyClass))  # This will output: True
+```
