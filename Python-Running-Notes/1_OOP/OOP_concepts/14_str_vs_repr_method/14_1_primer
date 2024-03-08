@@ -1,7 +1,11 @@
 ### Refer these links:
 https://realpython.com/python-repr-vs-str/  
-&  
-https://www.youtube.com/watch?v=FIaPZXaePhw
+OR
+https://realpython.com/courses/pythonic-oop-string-conversion-repr-vs-str/ <br>
+Must go through it: https://realpython.com/lessons/complete-example-best-practices/ 
+
+
+Note: The default implementation for str calls repr internally.
 
 The `str` and `repr` methods serve different purposes and are used in different contexts.
 
