@@ -1,6 +1,10 @@
 ## Links 
-https://realpython.com/courses/python-argparse-command-line-interfaces/ 
-https://realpython.com/courses/python-site-connectivity-checker/ 
+https://realpython.com/courses/python-argparse-command-line-interfaces/ <br> 
+https://realpython.com/courses/python-site-connectivity-checker/ <br>
+https://laxfed.dev/python-python-basics-working-with-argparse-944734a65355 <br>
+https://laxfed.dev/python-argparse-multiplicity-in-python-39d7ee891d79 <br>
+https://lovethepenguin.com/python-how-to-read-command-line-arguments-d4f3221ac29d <br>
+
 
 ## Examples
 `argparse` is a module in Python that allows easy parsing of command-line arguments. It makes it easy to write user-friendly command-line interfaces. Here's an example of how to use `argparse`:

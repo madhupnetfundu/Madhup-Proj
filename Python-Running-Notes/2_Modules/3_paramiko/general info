@@ -1,5 +1,10 @@
 ## General info
 
+#### Links
+https://medium.com/nerd-for-tech/paramiko-how-to-transfer-files-with-remote-system-sftp-servers-using-python-52d3e51d2cfa
+https://medium.com/@syedmuhammadwajeeh/how-to-pull-data-from-an-sftp-directory-python-and-aws-lambda-83a6e77a9fcd 
+
+
 Paramiko is a Python library that provides an interface to SSH (Secure Shell) protocol for secure communication between two remote systems. It is used for establishing a secure connection between the local and remote computer, executing commands on the remote system, and transferring files between them.
 
 Here's an example of how to use Paramiko to connect to a remote server and execute a command:

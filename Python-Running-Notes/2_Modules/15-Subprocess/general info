@@ -1,5 +1,9 @@
 ## Links 
-https://realpython.com/python-subprocess/
+https://realpython.com/python-subprocess/ <br>
+[Everything about the python subprocess module](https://medium.com/@juggernutx/everything-about-the-python-subprocess-module-d5a6a702b9c5) <br>
+[Executing System Commands in Python: A Guide to Using the subprocess Module](https://theusmanhaider.medium.com/executing-system-commands-in-python-a-guide-to-using-the-subprocess-module-81f09849f33e) <br>
+[Python Subprocess Run](https://medium.com/@techclaw/python-subprocess-run-ad2fcedde2d5) <br>
+
 
 
 In Python, `subprocess` is a module used to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. It allows you to run other programs or commands from within your Python code. Here are some examples of how `subprocess` can be used:
