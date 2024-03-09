@@ -1,5 +1,9 @@
 ## Links 
-https://docs.python.org/3/library/configparser.html 
+https://docs.python.org/3/library/configparser.html <br>
+[configparser article in medium](https://medium.com/nerd-for-tech/python-configparser-a-comprehensive-guide-%EF%B8%8F-36331be5244f) <br>
+
+
+
 
 `configparser` is a Python standard library module that provides an easy way to manage configurations in a .ini-style format. It allows the parsing of configuration files into an organized data structure, which can be used to retrieve and manipulate configuration settings.
 
