@@ -21,3 +21,41 @@
 		IBM Cloud
 
 ## Knowledge Milestones
+	- Basic components of k8s
+	- Pods
+	- ReplicaSets
+	- Deployments
+	- Services
+	- Ingress
+	- ConfigMaps
+	- Secrets
+	- Namespaces
+	- Resource Quotas
+	- Limit Ranges
+	- Taints and Tolerations
+	- Node Affinity
+	- Pod Affinity
+	- Pod Anti-Affinity
+	- DaemonSets
+	- Jobs
+	- CronJobs
+	- StatefulSets
+	- Helm
+	- Kustomize
+	- KubeCtl
+	- KubeAdm
+	- KubeProxy
+	- Kubelet
+	- KubeApiServer
+	- KubeControllerManager
+	- KubeScheduler
+	- ETCD
+	- Kubelet
+	- KubeProxy
+	- Service Account
+	- Role
+	- RoleBinding
+	- ClusterRole
+	- ClusterRoleBinding
+	- Network Policies
+	- Pod Security Policies
