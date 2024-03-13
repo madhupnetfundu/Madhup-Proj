@@ -14,7 +14,7 @@ Checking Conditions
 
 The Syntax of the assert Statement
 
-`assert expression[, assertion_message]`
+`assert expression, optional_assertion_message`
 
   - `expression`: The condition you’d like to check. Expression is Tested For Truthiness
   - If `expression` Is False , AssertionError is Raised
@@ -27,14 +27,22 @@ The Syntax of the assert Statement
      - Do Not Use try … except Blocks With AssertionError
      - AssertionError Should Lead to Program Termination
 
+```python
+>>> number = 42
+>>> assert number > 0, f"number greater than 0 expected, got: {number}"
+
+>>> number = -42
+>>> assert number > 0, f"number greater than 0 expected, got: {number}"
+Traceback (most recent call last):
+    ...
+AssertionError: number greater than 0 expected, got: -42
+```
+
 Disabling Assertions (as it impacts performance OR particularly when its not desirable)
     python -O or python -OO
     Setting The PYTHONOPTIMIZE Environment Variable
 
-![__debug__ values](../Python_Images/assert%20debug.png)
-
-<br>
-
+![__debug__ values](../../Python_Images/assert%20debug.png)
 
 #### Development Workflow
 Normal : `__debug__` = True
