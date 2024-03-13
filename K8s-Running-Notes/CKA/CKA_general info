@@ -1,11 +1,53 @@
-`VVIP Links:`
-[A very article regarding valuable resources for cka](https://medium.com/@InnovateForge/cka-certified-kubernetes-administrator-cheat-sheet-afaf2c2ec473) <br>
+`VVIP Links:` <br>
+1. [Mandatory reference_CKA cheat sheet where the exact stuff is mentioned as to what to prepare for CKA](https://medium.com/@InnovateForge/cka-certified-kubernetes-administrator-cheat-sheet-afaf2c2ec473) <br> 
+2. [Mandatory reference_A very good medium article regarding 13-kubernetes-configurations one should know for the CKA exam](https://overcast.blog/13-kubernetes-configurations-you-should-know-in-2024-54eec72f307e) <br>
+3. [Mandatory reference_An article regarding what one should know for the CKA exam](https://praveendandu24.medium.com/crack-the-cka-exam-in-one-shot-proven-tips-for-first-time-success-58138c2971ef) <br>
 
+<br><br>
+`Exam Resources to help with CKA Gyan`:
 
+1. [Certified Kubernetes Administrator (CKA) Study Guide O'reilly book](https://learning.oreilly.com/library/view/certified-kubernetes-administrator/9781098107215/) <br>
+2. [Certified Kubernetes Administrator (CKA) Certification Training Course on O'reilly](https://learning.oreilly.com/course/certified-kubernetes-administrator/9781804619018/) <br>
 
+<br>
 
-The following resources are strongly recommended:
+## [Exact topics to prepare for the exam (use the above `Exam Resources` section) ](https://www.whizlabs.com/blog/certified-kubernetes-administrator-exam-tips/#:~:text=Step%207%3A%20Focus%20on%20gaining%20practical%20exposure)
 
+ * Configuring Web Servers in a Pod using Kubernetes
+ * Understanding Replication Controller
+ * Deploying Replication with ReplicaSet Resource
+ * Mounting Secrets to a Pod as Volumes
+ * Understanding Service Networking with NodePort
+ * ClusterIP Service in Kubernetes
+ * Load Balancer Service Networking in Kubernetes
+ * Configuring DaemonSet in the cluster
+ * Persistent Storage in Kubernetes
+ * Deploying Init containers in a cluster
+ * Accessing resource as service networking
+ * Applying Roles based Access Control for Kubernetes
+ * Controlling Resource Scheduling with Taint and tolerance
+
+<br>
+
+### The following resources are strongly recommended:
 - KodeKloud CKA Certification Course and Ultimate Certified Kubernetes Administrator (CKA) Mock Exam Series
 - Killercoda CKA Practice Scenarios
 - Linux Foundation Exam Simulators(killer.sh) for practicing some harder questions
+
+<br>
+
+## Exact Questions for CKA
+1. [All questions for free](https://www.itexams.com/exam/CKA?) <br>
+2. [CNCF CKA Exam Actual Questions](https://www.examtopics.com/exams/cncf/cka/view/)
+
+![K8s Breakup](<../K8s Images/cka exam breakup.png>)
+
+
+
+## Mock Exams / Forums where I can practice CKA topics
+1. [One of the best_ labs.iximiuz.com](https://labs.iximiuz.com/dashboard)
+1. [Killercoda_another top choice](https://killercoda.com/cka)
+2. [Kodekloud CKA mock exam](https://kodekloud.com/courses/ultimate-certified-kubernetes-administrator-cka-mock-exam/)
+3. [killer.sh](https://killer.sh)
+4. [Play with k8s](https://labs.play-with-k8s.com/)
+5. [acloud guru labs](https://learn.acloud.guru/labs)
