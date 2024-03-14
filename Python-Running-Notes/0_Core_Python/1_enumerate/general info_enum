@@ -1,2 +1,68 @@
 `Links:`<br>
 https://realpython.com/courses/python-enum/ 
+
+<br>
+
+example 1:
+```python
+from enum import Enum
+
+class Season(Enum):
+	SPRING = 1
+	SUMMER = 2
+	AUTUMN = 3
+	WINTER = 4
+print(Season.SPRING)
+print(Season.SPRING.name)
+print(Season.SPRING.value)
+print(type(Season.SPRING))
+print(repr(Season.SPRING))
+print(list(Season))
+```
+
+<br>
+
+Output:
+```
+Season.SPRING
+SPRING
+1
+<enum 'Season'>
+<Season.SPRING: 1>
+[<Season.SPRING: 1>, <Season.SUMMER: 2>, <Season.AUTUMN: 3>, <Season.WINTER: 4>]
+```
+
+<br>
+
+example 2:
+```python
+from enum import Enum
+
+# program to create a day class
+class Day(Enum):
+	MONDAY = 1
+	TUESDAY = 2
+	WEDNESDAY = 3
+	THURSDAY = 4
+	FRIDAY = 5
+	SATURDAY = 6
+	SUNDAY = 7
+
+print(Day.MONDAY)
+print(Day.MONDAY.name)
+print(Day.MONDAY.value)
+print(type(Day.MONDAY))
+print(repr(Day.MONDAY))
+print(list(Day))
+```
+
+<br>
+
+```output
+Day.MONDAY
+MONDAY
+1
+<enum 'Day'>
+<Day.MONDAY: 1>
+[<Day.MONDAY: 1>, <Day.TUESDAY: 2>, <Day.WEDNESDAY: 3>, <Day.THURSDAY: 4>, <Day.FRIDAY: 5>, <Day.SATURDAY: 6>, <Day.SUNDAY: 7>]
+```
