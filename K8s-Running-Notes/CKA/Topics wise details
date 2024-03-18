@@ -1,0 +1,39 @@
+## 25% - Cluster Architecture, Installation & Configuration:
+
+##### Manage role based access control (RBAC)
+
+👉 Roles grant permissions, whereas RoleBindings bind Roles to subjects
+![Roles grant permissions, whereas RoleBindings bind Roles to subjects](../../K8s-Running-Notes/K8s%20Images/Roles%20and%20Role%20Bindings.png)
+
+<br>
+
+👉 The distinction between a Role and a ClusterRole, or between a RoleBinding and a ClusterRoleBinding, is that the Role and RoleBinding are namespaced resources, whereas the ClusterRole and ClusterRoleBinding are cluster-level resources (not namespaced)
+![Roles and RoleBindings are namespaced; ClusterRoles and ClusterRoleBindings aren’t](../../K8s-Running-Notes/K8s%20Images/Roles%20and%20RoleBindings%20are%20namespaced%20BUT%20ClusterRoles%20and%20ClusterRoleBindings%20are%20not.png)
+
+
+
+`Good References for RBAC`
+[388👏 Configure RBAC in Kubernetes Like a Boss](https://medium.com/trendyol-tech/configure-rbac-in-kubernetes-like-a-boss-665e2a8665dd) <br>
+
+[150👏 likes Kubernetes — Role-Based Access Control (RBAC) Overview](https://medium.com/devops-mojo/kubernetes-role-based-access-control-rbac-overview-introduction-rbac-with-kubernetes-what-is-2004d13195df) <br>
+
+[2👏 RBAC in Kubernetes](https://medium.com/@maheshwar.ramkrushna/rbac-in-kubernetes-b6c4c23432ef#:~:text=In%20Kubernetes%2C%20Role%2DBased%20Access,ClusterRole%2C%20RoleBinding%2C%20and%20ClusterRoleBinding.) <br>
+
+
+[The complete guide of Kubernetes Role-Based Access Control (RBAC)](https://medium.com/@jonathan_37674/the-complete-guide-of-kubernetes-role-based-access-control-rbac-651bbeeaa0f8) <br>
+
+
+
+
+
+
+
+
+
+<br> <br> <br>
+
+• Use Kubeadm to install a basic cluster
+• Manage a highly-available Kubernetes cluster
+• Provision underlying infrastructure to deploy a Kubernetes cluster
+• Perform a version upgrade on a Kubernetes cluster using Kubeadm
+• Implement etcd backup and restore
