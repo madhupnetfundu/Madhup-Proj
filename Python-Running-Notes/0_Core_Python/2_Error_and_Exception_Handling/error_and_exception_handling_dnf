@@ -1,10 +1,16 @@
 💡In Python’s exception handling mechanism, the code inside an else clause executes when no exceptions come up in the try block. See this for example: https://realpython.com/python-exceptions/#the-else-clause <br>
 
 💡Remember the below points:
-![Python Exceptions.. Points to Remeber](../Python_Images/Python_Exception_Handling_Info.jpg) <br>
+![Python Exceptions.. Points to Remeber](../../Python_Images/Python_Exception_Handling_Info.jpg) 
+
+<br>
+<br>
 
 Also Remember the below:
-![final point](../Python_Images/try_except_else_finally.jpg) <br>
+
+![final point](../../Python_Images/try_except_else_finally.jpg) 
+
+<br>
 
 
 ## Examples 
