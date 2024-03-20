@@ -3,17 +3,91 @@
 ##### Manage role based access control (RBAC)
 
 👉 Roles grant permissions, whereas RoleBindings bind Roles to subjects
+<br>
 ![Roles grant permissions, whereas RoleBindings bind Roles to subjects](../../K8s-Running-Notes/K8s%20Images/Roles%20and%20Role%20Bindings.png)
+
+<br> 
+
+
+
+What is Service Account?
+![ServiceAccount](../K8s%20Images/ServiceAccount.png)
+
+
+👉 The distinction between a Role and a ClusterRole, or between a RoleBinding and a ClusterRoleBinding, is that the Role and RoleBinding are namespaced resources, whereas the ClusterRole and ClusterRoleBinding are cluster-level resources (not namespaced)
+<br>
+![Roles and RoleBindings are namespaced; ClusterRoles and ClusterRoleBindings aren’t](../../K8s-Running-Notes/K8s%20Images/Roles%20and%20RoleBindings%20are%20namespaced%20BUT%20ClusterRoles%20and%20ClusterRoleBindings%20are%20not.png)
 
 <br>
 
-👉 The distinction between a Role and a ClusterRole, or between a RoleBinding and a ClusterRoleBinding, is that the Role and RoleBinding are namespaced resources, whereas the ClusterRole and ClusterRoleBinding are cluster-level resources (not namespaced)
-![Roles and RoleBindings are namespaced; ClusterRoles and ClusterRoleBindings aren’t](../../K8s-Running-Notes/K8s%20Images/Roles%20and%20RoleBindings%20are%20namespaced%20BUT%20ClusterRoles%20and%20ClusterRoleBindings%20are%20not.png)
+💡Remember: <br>
+we use RoleBinding to bind Roles while ClusterRoleBinding to bind ClusterRoles. 
 
+But as an addition we can use RoleBinding to bind a ClusterRole to a Role within a namespace.
 
 
 `Good References for RBAC`
+<br>
 [388👏 Configure RBAC in Kubernetes Like a Boss](https://medium.com/trendyol-tech/configure-rbac-in-kubernetes-like-a-boss-665e2a8665dd) <br>
+
+#### Learnings:
+ We can create a role with a single verb and resource as well. For example, to create a role that can list pods in the k8boss namespace, we can run the following command:
+`kubectl create role my-custom-role --verb=list --resource=pods --namespace k8boss`
+
+We can also specify multiple verbs and resources as well:
+`kubectl create role my-custom-role --verb=list --verb=get --resource=pods --resource=services --namespace k8boss`
+
+Further update the above role:
+`kubectl create role my-custom-role --verb=list --verb=get --resource=pods --resource=services --namespace k8boss`
+
+Same thing via yaml:
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: my-custom-role
+  namespace: k8boss
+rules:
+  - apiGroups:
+      - "*"
+    resources:
+      - services
+      - pods
+    verbs:
+      - get
+      - list
+```
+<br>
+
+To update an existing role imperatively, you can use the kubectl patch command:<br>
+`kubectl patch role <role_name> -n <namespace> --type='json' -p='[{"op": "replace", "path": "/rules/0/verbs", "value": ["get", "list", "watch", "create", "update", "delete"]}]'`
+
+
+<br>
+
+ClusterRole yaml does not differ much from above (just that namespace is not there)
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: my-custom-cluster-role
+rules:
+  - apiGroups:
+      - "*"
+    resources:
+      - services
+      - pods
+    verbs:
+      - get
+      - list
+```
+
+
+
+
+
+
+<br>
 
 [150👏 likes Kubernetes — Role-Based Access Control (RBAC) Overview](https://medium.com/devops-mojo/kubernetes-role-based-access-control-rbac-overview-introduction-rbac-with-kubernetes-what-is-2004d13195df) <br>
 
@@ -32,8 +106,8 @@
 
 <br> <br> <br>
 
-• Use Kubeadm to install a basic cluster
-• Manage a highly-available Kubernetes cluster
-• Provision underlying infrastructure to deploy a Kubernetes cluster
-• Perform a version upgrade on a Kubernetes cluster using Kubeadm
-• Implement etcd backup and restore
+• Use Kubeadm to install a basic cluster <br>
+• Manage a highly-available Kubernetes cluster <br>
+• Provision underlying infrastructure to deploy a Kubernetes cluster <br>
+• Perform a version upgrade on a Kubernetes cluster using Kubeadm <br>
+• Implement etcd backup and restore <br>
