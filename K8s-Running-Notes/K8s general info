@@ -1,3 +1,236 @@
-🟢 Currently I am learning ... 
+Interview Topics K8s:
+RBAC
+services
+deployment
+ingress
+network policies
+helm
+kubeadm
+etcd
+k8s architecture
+istio
+troubleshooting
 
-🔵 Try to do a story like thing in K8s
+
+- What process would you use to isolate and resolve performance bottleneck for a dockerised application deployed on AWS?
+- Create an architecture strategy for implementing a secure scalable api in aws that can handle millions of requests/day.
+- Demonstrate of container security best practices when orchestrating deployment with kubernetes on AWS.
+
+
+<br>
+<br>
+
+#### Miscellaneous:
+1. What is the role of Kube-Proxy in Kubernetes?
+2. How does Kubernetes handle failover?
+3. What is the difference between a ReplicaSet and a Deployment in Kubernetes?
+4. How do you monitor the performance of a Kubernetes cluster?
+5. What is the role of etcd in a Kubernetes architecture?
+6. How does Kubernetes provide scalability?
+7. What is Helm in Kubernetes and why is it important?
+8. What is the purpose of Ingress in Kubernetes?
+9. How does Kubernetes ensure high availability?
+10. What are some security measures you should take when setting up a Kubernetes cluster?
+
+<br>
+<br>
+
+#### Top 10 Services Questions in Kubernetes:
+
+1. What is a Service in Kubernetes?
+    - A Service in Kubernetes is an abstraction which defines a logical set of Pods and a policy by which to access them.
+
+2. How does a Service find a Pod?
+    - A Service finds a Pod using selectors, which are key-value pairs that match labels assigned to Pods.
+
+3. What are the different types of Services in Kubernetes?
+    - The different types of Services in Kubernetes are ClusterIP, NodePort, LoadBalancer, and ExternalName.
+
+4. What is a NodePort Service?
+    - A NodePort Service is one that is accessible on each Node’s IP at a static port.
+
+5. What is a LoadBalancer Service?
+    - A LoadBalancer Service is a NodePort Service that is also accessible externally, via a cloud provider's load balancer.
+
+6. What is an ExternalName Service?
+    - An ExternalName Service is a special type of service that does not have selectors and uses DNS names instead.
+
+7. How can you expose a Service outside of the cluster?
+    - You can expose a Service outside of the cluster using NodePort, LoadBalancer, or Ingress.
+
+8. What is the role of kube-proxy in Services?
+    - kube-proxy is a network proxy that runs on each node and maintains network rules that allow network communication to Pods from network sessions inside or outside of the cluster.
+
+9. How does a Service handle Pod failures?
+    - A Service automatically handles Pod failures by removing the failed Pod from the endpoints list and redirecting traffic to other Pods.
+
+10. How can you update the set of Pods that a Service sends traffic to?
+    - You can update the set of Pods that a Service sends traffic to by changing the Service's selectors or by relabeling the Pods.
+
+<br>
+<br>
+
+#### Top 10 Deployment Questions in Kubernetes:
+
+1. What is a Deployment in Kubernetes?
+    - A Deployment in Kubernetes provides declarative updates for Pods and ReplicaSets.
+
+2. How do you create a Deployment?
+    - You can create a Deployment by defining a .yaml or .json file and using the `kubectl apply -f` command.
+
+3. How can you update a Deployment?
+    - You can update a Deployment by modifying the .yaml or .json file and reapplying it with `kubectl apply -f`. Alternatively, you can use the `kubectl set image` command.
+
+4. What happens when a Deployment is scaled?
+    - When a Deployment is scaled, Kubernetes increases or decreases the number of Pod replicas defined in the Deployment.
+
+5. How does a Deployment handle Pod failures?
+    - A Deployment automatically replaces any failed Pods with new ones.
+
+6. What is Rolling Update in the context of a Deployment?
+    - Rolling Update is a deployment strategy that gradually replaces old Pods with new ones, with no downtime.
+
+7. How can you rollback a Deployment?
+    - You can rollback a Deployment using the `kubectl rollout undo` command.
+
+8. What is the difference between a Deployment and a StatefulSet?
+    - A Deployment is best for stateless applications, while a StatefulSet is used for stateful applications where the identity and state of Pods need to be preserved.
+
+9. How can you pause a Deployment?
+    - You can pause a Deployment using the `kubectl rollout pause` command.
+
+10. How can you check the status of a Deployment?
+    - You can check the status of a Deployment using the `kubectl rollout status` command.
+
+<br>
+<br>
+
+
+#### Top 10 Ingress Questions in Kubernetes:
+1. What is Ingress in Kubernetes?
+    - Ingress in Kubernetes is an API object that manages external access to the services in a cluster, typically HTTP and HTTPS.    
+2. How do you create an Ingress?
+    - You can create an Ingress by defining a .yaml or .json file and using the `kubectl apply -f` command.    
+3. What is an Ingress Controller?
+    - An Ingress Controller is a daemon, deployed as a Kubernetes Pod, that interprets the Ingress Resource and provisions thenecessary load balancer or reverse proxy rules.
+    
+4. What are the different types of Ingress Controllers?
+    - Some of the different types of Ingress Controllers include Nginx, Traefik, HAProxy, and the GCE and AWS controllers.    
+5. How does Ingress handle traffic routing?
+    - Ingress handles traffic routing based on the rules defined in the Ingress Resource. These rules can direct traffic based onvarious factors such as the host or the URL path.
+    
+6. What is a default backend in Ingress?
+    - A default backend is an option that handles all requests not matched by any Ingress rule.    
+7. How can you secure an Ingress?
+    - You can secure an Ingress by enabling TLS/SSL on it. This requires a valid TLS/SSL certificate.    
+8. What is the difference between a Service of type LoadBalancer and Ingress?
+    - A Service of type LoadBalancer will provision a load balancer for that particular service. Ingress, on the other hand, is asystem-wide load balancer that can route traffic to multiple services based on the request.
+    
+9. How can you update the rules of an Ingress?
+    - You can update the rules of an Ingress by modifying the .yaml or .json file and reapplying it with `kubectl apply -f`.    
+10. How can you check the status of an Ingress?
+    - You can check the status of an Ingress using the `kubectl get ingress` command.
+
+<br>
+<br>
+
+    #### Top 10 etcd Questions in Kubernetes:
+
+    1. What is etcd in Kubernetes?
+        - etcd is a distributed key-value store used by Kubernetes to store all data used to manage the cluster.
+
+    2. How does etcd work in Kubernetes?
+        - etcd works as the single source of truth for the cluster, storing configuration data, state, and metadata. Kubernetes components read from and write to etcd.
+
+    3. How is data stored in etcd?
+        - Data in etcd is stored in a hierarchical file system-like format. The data is stored as key-value pairs.
+
+    4. How do you backup etcd in Kubernetes?
+        - You can backup etcd using the `etcdctl snapshot save` command.
+
+    5. How do you restore etcd in Kubernetes?
+        - You can restore etcd from a backup using the `etcdctl snapshot restore` command.
+
+    6. How do you scale etcd in Kubernetes?
+        - Scaling etcd involves adding more nodes to the etcd cluster. However, due to its consensus-based protocol, it's recommended to use an odd number of nodes.
+
+    7. What is the role of etcd in Kubernetes high availability?
+        - etcd is critical for Kubernetes high availability. It stores the state of the Kubernetes cluster, including node and pod information, making it essential for recovery in case of failures.
+
+    8. How do you monitor etcd in Kubernetes?
+        - etcd exposes metrics over HTTP which can be collected and viewed with tools like Prometheus and Grafana.
+
+    9. How do you secure etcd in Kubernetes?
+        - You can secure etcd by enabling client-to-server and server-to-server SSL/TLS communication, and by using authentication and authorization mechanisms.
+
+    10. How do you update etcd in Kubernetes?
+        - Updating etcd in Kubernetes should be done carefully, as it can impact the functioning of the cluster. It's usually done by taking a backup, stopping etcd, updating the binary, and then restarting it.
+
+<br>
+<br>
+
+#### Top 10 Troubleshooting Questions in Kubernetes:
+
+1. How do you check the logs of a Kubernetes pod?
+    - You can check the logs of a Kubernetes pod using the `kubectl logs <pod-name>` command.
+
+2. How do you debug a pod that is not running?
+    - You can describe the pod to get more information about its status and events using the `kubectl describe pod <pod-name>` command.
+
+3. What do you do when a pod is stuck in the 'Pending' state?
+    - A pod might be stuck in the 'Pending' state due to insufficient resources, scheduling constraints, or image pull errors. You can describe the pod to get more information.
+
+4. How do you check the events of a specific namespace?
+    - You can check the events of a specific namespace using the `kubectl get events --namespace=<namespace-name>` command.
+
+5. How do you check the resource usage of nodes or pods?
+    - You can check the resource usage of nodes using the `kubectl top nodes` command and for pods using the `kubectl top pods` command.
+
+6. How do you access a service running inside a cluster?
+    - You can access a service running inside a cluster by setting up an Ingress or by port-forwarding the service to a local port using the `kubectl port-forward` command.
+
+7. How do you update a Kubernetes deployment?
+    - You can update a Kubernetes deployment by changing the deployment's configuration file and applying it using the `kubectl apply -f <file-name>` command.
+
+8. How do you rollback a deployment to a previous version?
+    - You can rollback a deployment to a previous version using the `kubectl rollout undo deployment/<deployment-name>` command.
+
+9. How do you troubleshoot a failed Kubernetes service?
+    - You can troubleshoot a failed Kubernetes service by checking the logs of the pods that are part of the service and by describing the service to check its events and configuration.
+
+10. How do you check the health of a Kubernetes cluster?
+    - You can check the health of a Kubernetes cluster by checking the status of all nodes using the `kubectl get nodes` command and by checking the status of all pods using the `kubectl get pods --all-namespaces` command.
+
+<br>
+<br>
+
+#### Top 10 RBAC Questions in Kubernetes:
+1. What is RBAC in Kubernetes?
+    - RBAC (Role-Based Access Control) in Kubernetes is a method for managing user permissions and authorizations in a Kubernetes cluster.
+
+2. How do you create a Role in Kubernetes?
+    - You can create a Role by defining a .yaml file with the Role definition and using the `kubectl apply -f` command.
+
+3. What is the difference between a Role and a ClusterRole?
+    - A Role is used to grant permissions within a specific namespace while a ClusterRole is used to grant the same permissions but cluster-wide.
+
+4. How do you bind a Role to a User or Group in Kubernetes?
+    - You can bind a Role to a User or Group using a RoleBinding or ClusterRoleBinding.
+
+5. What is a RoleBinding in Kubernetes?
+    - A RoleBinding grants the permissions defined in a role to a user or set of users. It holds a list of subjects (users, groups, or service accounts), and a reference to the role being granted.
+
+6. How do you check the permissions of a User in Kubernetes?
+    - You can check the permissions of a User using the `kubectl auth can-i` command.
+
+7. How do you restrict a User to a specific Namespace in Kubernetes?
+    - You can restrict a User to a specific Namespace by creating a RoleBinding that binds the User to a Role in that specific Namespace.
+
+8. How do you grant a User admin privileges in Kubernetes?
+    - You can grant a User admin privileges by creating a ClusterRoleBinding that binds the User to the cluster-admin ClusterRole.
+
+9. How do you remove a User's permissions in Kubernetes?
+    - You can remove a User's permissions by deleting the appropriate RoleBinding or ClusterRoleBinding.
+
+10. How do you list all the RoleBindings in a Namespace?
+    - You can list all the RoleBindings in a Namespace using the `kubectl get rolebindings --namespace=<namespace-name>` command.
