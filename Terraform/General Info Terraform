@@ -5,6 +5,6 @@ Currently I am doing:
 
 Topics to be covered in Terraform:
 
-Deep understanding of Terraform syntax and features
-Use Terraform to create and manage infrastructure in a scalable and repeatable way.
-Terraform Modules
+- Working with multiple providers
+- Variables VVIP
+- 

@@ -1,0 +1,21 @@
+# RBAC_Exercieses
+
+Basic Role Creation: Create a role that allows users to list pods in a specific namespace.
+
+RoleBinding Creation: Create a RoleBinding that assigns the role created in Exercise 1 to a specific user or group.
+
+Namespace-Level Roles: Create a role that allows users to create and delete pods in a specific namespace.
+
+Cluster-Level Roles: Create a cluster-level role that allows users to list all namespaces in the cluster.
+
+ClusterRoleBinding: Create a ClusterRoleBinding that assigns the cluster-level role created in Exercise 4 to a specific user or group.
+
+Custom Resource Definition (CRD) Access: Create a role that allows users to create, update, and delete Custom Resource Definitions (CRDs).
+
+Role Inheritance: Create a role that inherits permissions from an existing role but adds additional permissions.
+
+Role Refactoring: Refactor existing roles to minimize duplication and improve maintainability.
+
+Role Review and Cleanup: Review existing roles and role bindings for unused or unnecessary permissions and clean up accordingly.
+
+RBAC Best Practices: Implement RBAC best practices such as least privilege, separation of duties, and regular review and audit of permissions.

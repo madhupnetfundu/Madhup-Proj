@@ -1,14 +1,27 @@
 Interview Topics K8s:
-RBAC
-services
-deployment
-ingress
+--- Most Imp ---
+<br>
+- RBAC
+- services
+- deployment
+- ingress
+- replicasets
+- labels and selectors
+- configmaps and secrets
+- namespaces
+- PV and PVC
+- schedulers
+- etcd
+- helm
+- istio
+<br>
+
+
+
+#####
 network policies
-helm
 kubeadm
-etcd
 k8s architecture
-istio
 troubleshooting
 
 
