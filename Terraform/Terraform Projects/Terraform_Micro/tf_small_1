@@ -1,0 +1,43 @@
+Look up https://developer.hashicorp.com/tutorials/library?product=terraform for more examples.
+
+Basic Variable Declaration:
+
+Declare a variable named region and set its default value to "us-west-1".
+Use this variable in an AWS resource definition.
+Variable Types:
+
+Declare variables of different types: string, number, bool, list, map, etc.
+Use each variable type in appropriate resource configurations.
+Required Variables:
+
+Declare a variable named environment as a string.
+Make it required and provide a default value of "dev".
+Use this variable in resource names to differentiate environments.
+Conditional Variables:
+
+Declare a variable named enable_feature as a boolean.
+Use this variable to conditionally enable/disable resources in your configuration.
+Variable Interpolation:
+
+Declare a variable named instance_count as a number with a default value of 2.
+Use this variable to define the number of instances in an AWS Auto Scaling Group.
+Variable Maps:
+
+Declare a map variable named instance_types to map instance sizes to instance counts.
+Use this map variable to define instance configurations dynamically.
+Variable Lists:
+
+Declare a list variable named availability_zones with a default value of ["us-west-1a", "us-west-1b", "us-west-1c"].
+Use this list variable to create resources in multiple availability zones.
+Sensitive Variables:
+
+Declare a sensitive variable named admin_password.
+Use this variable to set passwords for resources and ensure it is not shown in the Terraform plan or state output.
+Variable Overrides:
+
+Define default values for variables in variables.tf.
+Use the -var flag to override these values when running terraform apply.
+Variable Validation:
+
+Add validation rules to variables (e.g., allowed values, string length constraints).
+Test the behavior when invalid values are provided.
