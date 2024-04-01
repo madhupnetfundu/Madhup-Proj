@@ -10,10 +10,24 @@ Interview Topics K8s:
 - configmaps and secrets
 - namespaces
 - PV and PVC
+- liveliness and readiness probes
+- hpa
+- jobs and cronjobs
+- statefulsets
 - schedulers
 - etcd
 - helm
+    - ![What is Helm?](<..//K8s-Running-Notes/K8s Images/Helm.png>)
+    - [Introduction to Helm Charts](https://kirti-garg0410.medium.com/introduction-to-helm-charts-cb93f82af30f)
+    - [Helm — Dependencies](https://levelup.gitconnected.com/helm-dependencies-1907facbe410)
+    - [Unlocking Kubernetes Efficiency with Helm](https://eugenhoble.medium.com/unlocking-kubernetes-efficiency-with-helm-c5d9328f109e)
 - istio
+    - Istio Security
+        ![Istio Security](https://istio.io/latest/docs/concepts/security/arch-sec.svg)
+    - [Circuit Breaker Pattern in Microservices](https://medium.com/@minadev/circuit-breaker-pattern-in-microservices-9568320f2059)
+    - [Life of a Packet in ISTIO — Control Plane— Part 3](https://dramasamy.medium.com/life-of-a-packet-in-istio-control-plane-part-3-899e565da4d2)
+
+
 <br>
 
 
