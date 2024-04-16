@@ -1,5 +1,0 @@
-👉 Imp links for getting started:
-https://www.geeksforgeeks.org/python-execute-and-parse-linux-commands/
-https://realpython.com/python-subprocess/   --> good one
-https://www.youtube.com/watch?v=Jd8ulMb6_ls --> nice
-https://docs.python.org/3/library/subprocess.html#subprocess.run 

@@ -1,3 +1,28 @@
-🟢 Currently I am taking this course from oreilly: Ansible: From Basics to Guru By Sander van Vugt
-
-🔵 Try to do a story like thing in Ansible
+Topics to learn in Ansible:
+1. Ansible Playbooks
+2. Ansible Modules
+3. Ansible Roles
+4. Ansible Variables
+5. Ansible Templates
+6. Ansible Handlers
+7. Ansible Facts
+8. Ansible Vault
+9. Ansible Tags
+10. Ansible Loops
+11. Ansible Conditionals
+12. Ansible Blocks
+14. Ansible Galaxy
+15. Ansible Tower
+16. Ansible AWX
+17. Ansible Collections
+18. Ansible Callbacks
+19. Ansible Plugins
+20. Ansible Filters
+21. Ansible Inventory
+22. Ansible Configuration
+23. Ansible Best Practices
+24. Ansible Troubleshooting
+25. Ansible Interview Questions
+26. Ansible Cheat Sheet
+27. Ansible Examples
+28. Ansible Ad-hoc Commands

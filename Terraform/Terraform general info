@@ -1,0 +1,46 @@
+Book #1 :
+Terraform: Up and Running: 3rd edition by Yevgeniy Brikman
+
+Concepts:
+- Install Terraform
+- Terraform State Mgmt:
+    - Local State (default)
+    - Remote State (S3, DynamoDB),
+    - Isolation via workspaces and isolation via file layout
+    - Limitations with Terraform's backends
+    - terraform_remote_state data source
+- Modules
+    - Module Inputs
+    - Module Locals
+    - Module Outputs
+    - Module Gotchas
+    - Module Versioning
+- Tips n Trics
+    - Loops
+        - count
+        - for_each
+        - for
+        - Conditionals
+        - for string directive
+            - for loops
+            - conditionals
+    - Zero Downtime Deployments
+    - Gotchas
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Links :
+[Code_Terraform Up & Running Book](https://github.com/brikis98/terraform-up-and-running-code)
