@@ -1,0 +1,48 @@
+## Links 
+https://docs.python.org/3/library/configparser.html <br>
+[configparser article in medium](https://medium.com/nerd-for-tech/python-configparser-a-comprehensive-guide-%EF%B8%8F-36331be5244f) <br>
+
+
+
+
+`configparser` is a Python standard library module that provides an easy way to manage configurations in a .ini-style format. It allows the parsing of configuration files into an organized data structure, which can be used to retrieve and manipulate configuration settings.
+
+Here is an example of how to use `configparser` to read from a configuration file named `config.ini`:
+
+```python
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+# Accessing values from the configuration file
+print(config['database']['host'])
+print(config['database']['port'])
+print(config['database']['user'])
+print(config['database']['password'])
+```
+
+This code assumes that the `config.ini` file has a `[database]` section with `host`, `port`, `user`, and `password` options.
+
+`configparser` can also be used to write configuration files. Here is an example:
+
+```python
+import configparser
+
+config = configparser.ConfigParser()
+
+config['database'] = {'host': 'localhost',
+                      'port': '5432',
+                      'user': 'postgres',
+                      'password': 'mypassword'}
+
+with open('config.ini', 'w') as f:
+    config.write(f)
+```
+
+This code creates a `config.ini` file with a `[database]` section and `host`, `port`, `user`, and `password` options. The `write()` method writes the configuration to the file.
+
+`configparser` is a useful module for managing configurations in Python applications. It provides an easy-to-use interface for reading and writing configuration files in a well-defined format.
+
+
+

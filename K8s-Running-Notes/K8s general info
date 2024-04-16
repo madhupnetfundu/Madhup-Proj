@@ -1,21 +1,64 @@
+[minikube article](https://medium.com/@areesmoon/setting-up-minikube-and-accessing-minikube-dashboard-09b42fa25fb6)
+minikube dashboard
+kubectl proxy
+ssh -L 12345:localhost:8001 root@64.227.135.185 --> laptop
+access the dashboard at http://127.0.0.1:12345/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default 
+
+
 Interview Topics K8s:
 --- Most Imp ---
 <br>
 - RBAC
 - services
+    - chp 5 in K8s in Action
+- jsonpath
+    - See [jsonpath](https://kubernetes.io/docs/reference/kubectl/jsonpath/)
+- kubectl Quick Reference
+    - [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 - deployment
 - ingress
 - replicasets
+    - chp 4 in K8s in Action
 - labels and selectors
+    - chp 3 in K8s in Action
 - configmaps and secrets
+- annotations and taints
+    - chp 16 in K8s in Action (Advanced Scheduling)
 - namespaces
 - PV and PVC
-- liveliness and readiness probes
+    - https://bluexp.netapp.com/blog/cvo-blg-kubernetes-storageclass-concepts-and-common-operations 
+    - https://bluexp.netapp.com/blog/cvo-blg-kubernetes-persistent-volume-claims-explained 
+
+- liveness and readiness probes
+    Liveness and readiness probes are both mechanisms used in Kubernetes to improve the reliability and availability of applications running in pods. However, they serve different purposes:
+
+1. Liveness Probe:
+   - Purpose: The liveness probe is used to determine whether a container in a pod is running correctly. It checks if the application within the container is responsive and healthy.
+   - Action: If the liveness probe fails (i.e., if the application is unresponsive or unhealthy), Kubernetes will restart the container to attempt to restore its functionality.
+   - Use Case: Liveness probes are useful for detecting when an application has entered a non-recoverable state and needs to be restarted to recover.
+   - are of three types:
+        - HTTPGet: Sends an HTTP GET request to the specified path and port.
+        - TCPSocket: Opens a TCP connection to the specified port.
+        - Exec: Executes a command inside the container.
+
+2. Readiness Probe:
+   - Purpose: The readiness probe is used to determine whether a container in a pod is ready to serve requests. It checks if the application within the container has completed its startup process and is able to handle incoming requests.
+   - Action: If the readiness probe fails (i.e., if the application is not ready to serve requests), Kubernetes will temporarily remove the pod from the pool of endpoints that receive traffic. This prevents traffic from being routed to the pod until it becomes ready.
+   - Use Case: Readiness probes are useful for preventing traffic from being directed to pods that are still initializing or undergoing maintenance. They ensure that only healthy pods receive traffic, improving the overall reliability of the application.
+
+In summary, liveness probes are used to detect and recover from application failures, while readiness probes are used to control traffic and ensure that only healthy pods receive requests. Both probes play important roles in maintaining the availability and reliability of applications in a Kubernetes cluster.
+
 - hpa
+    - Chapter 15. Automatic scaling of pods and cluster nodes (K8s in Action)
 - jobs and cronjobs
+    - chp 5 in K8s in Action
 - statefulsets
+    - chp 10 in k8s in action
+- daemonsets
+    - see chp 5 in k8s in action
 - schedulers
 - etcd
+- advanced scheduling (Chp 16 in K8s in Action)
 - helm
     - ![What is Helm?](<..//K8s-Running-Notes/K8s Images/Helm.png>)
     - [Introduction to Helm Charts](https://kirti-garg0410.medium.com/introduction-to-helm-charts-cb93f82af30f)

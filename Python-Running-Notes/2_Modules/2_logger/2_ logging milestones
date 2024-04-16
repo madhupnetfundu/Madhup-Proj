@@ -1,8 +1,0 @@
-# milestones one must achieve from beginner to advanced in Python logging
-    - try to log from a python program to console and file handlers.
-    - try to log from a python program to console and file handlers with different log levels and different formatting.
-    - try to use the below for capturing traceback:
-        ```
-        ..snip..
-        logger.error(e, exc_info=True)
-        ```
