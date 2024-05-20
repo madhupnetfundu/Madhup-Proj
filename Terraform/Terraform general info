@@ -3,7 +3,21 @@ Terraform: Up and Running: 3rd edition by Yevgeniy Brikman
 
 Concepts:
 - Install Terraform
-- Terraform State Mgmt:
+    - choco install terraform
+    - Have the below files in .gitignore:
+        ```bash
+        .terraform
+        *.tfstate
+        *.tfstate.backup
+        ```
+- Variables and Outputs
+    - [Input Variables_Terraform docs](https://developer.hashicorp.com/terraform/language/values/variables)
+    - [Output Values_Terraform docs](https://developer.hashicorp.com/terraform/language/values/outputs)
+    - [Local Values_Terraform docs](https://developer.hashicorp.com/terraform/language/values/locals)
+    - [Variable-Definition-Precedence](https://developer.hashicorp.com/terraform/language/values/variables#variable-definition-precedence)
+
+- https://developer.hashicorp.com/terraform/language/values
+- State Mgmt:
     - Local State (default)
     - Remote State (S3, DynamoDB),
     - Isolation via workspaces and isolation via file layout
@@ -15,7 +29,7 @@ Concepts:
     - Module Outputs
     - Module Gotchas
     - Module Versioning
-- Tips n Trics
+- Tips n Tricks
     - Loops
         - count
         - for_each
@@ -42,5 +56,8 @@ Concepts:
 
 
 
-Links :
-[Code_Terraform Up & Running Book](https://github.com/brikis98/terraform-up-and-running-code)
+## Links :
+[Code_Terraform Up & Running Book](https://github.com/brikis98/terraform-up-and-running-code) <br>
+[Manage Kubernetes with Terraform](https://developer.hashicorp.com/terraform/tutorials/kubernetes) <br>
+[Terraform eks udemy course github link](https://github.com/stacksimplify/terraform-on-aws-eks) <br>
+[Terraform eks udemy course k8s fundamentals github link](https://github.com/stacksimplify/kubernetes-fundamentals) <br>

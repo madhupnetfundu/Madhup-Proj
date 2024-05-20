@@ -87,3 +87,75 @@ path = os.path.join(parent, directory)
 os.rmdir(path) 
 ```
 
+### Some more examples for os.path.kind() method ###
+```python
+import os
+# Path
+path = "/home/User/Documents/file.txt"
+# Check whether the specified path is an existing file
+isFile = os.path.isfile(path)
+print(isFile)
+# Check whether the specified path is an existing directory
+isDirectory = os.path.isdir(path)
+print(isDirectory)
+# Check whether the specified path is an existing symbolic link
+isSymLink = os.path.islink(path)
+print(isSymLink)
+# Check whether the specified path is an existing mount point
+isMountPoint = os.path.ismount(path)
+print(isMountPoint)
+```
+
+### Some examples for os.path.join() method ###
+```python
+import os
+
+# Example 1: Joining two path components
+path1 = '/usr'
+path2 = 'local'
+result = os.path.join(path1, path2)
+print(result)  # Output: /usr/local
+
+# Example 2: Joining multiple path components
+path1 = '/usr'
+path2 = 'local'
+path3 = 'bin'
+result = os.path.join(path1, path2, path3)
+print(result)  # Output: /usr/local/bin
+
+# Example 3: Joining with an absolute path
+path1 = '/usr'
+path2 = '/local'
+result = os.path.join(path1, path2)
+print(result)  # Output: /local (path2 is treated as an absolute path)
+
+# Example 4: Joining with an empty component
+path1 = '/usr'
+path2 = ''
+result = os.path.join(path1, path2)
+print(result)  # Output: /usr (path2 is empty, so it's effectively ignored)
+
+# Example 5: Joining with a relative path
+path1 = '/usr'
+path2 = 'local/bin'
+result = os.path.join(path1, path2)
+print(result)  # Output: /usr/local/bin
+
+# Example 6: Joining with the current directory
+path1 = '/usr'
+path2 = '.'
+result = os.path.join(path1, path2)
+print(result)  # Output: /usr (path2 refers to the current directory, so it's ignored)
+
+# Example 7: Joining with the parent directory
+path1 = '/usr/local'
+path2 = '..'
+result = os.path.join(path1, path2)
+print(result)  # Output: /usr (path2 refers to the parent directory, so it's applied)
+
+# Example 8: Joining with an absolute path in Windows
+path1 = 'C:\\'
+path2 = 'Windows'
+result = os.path.join(path1, path2)
+print(result)  # Output: C:\Windows
+```

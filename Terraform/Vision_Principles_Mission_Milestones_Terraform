@@ -1,0 +1,28 @@
+Here are the Terraform-specific skills I, as a Terraform guru looking to hire a principal Terraform engineer, would be looking for:
+
+* **Advanced Terraform Configuration:**
+    * Expertise in writing clean, maintainable, and reusable Terraform configurations.
+    * In-depth knowledge of Terraform modules and their effective use for code organization and sharing.
+    * Ability to leverage advanced features like data sources, interpolation, locals, and outputs. 
+* **State Management:**
+    * Strong understanding of Terraform state and its management.
+    * Experience with remote state backends (e.g., S3, Consul) for collaboration and high availability.
+    * Proficiency in handling potential state conflicts and applying appropriate locking mechanisms.
+* **Provider Expertise:**
+    * Deep understanding of core providers for major cloud platforms (AWS, Azure, GCP) and their functionalities.
+    * Experience with working with third-party providers for specific infrastructure needs.
+    * Ability to effectively utilize provider arguments and data sources for configuration management.
+* **Infrastructure as Code (IaC) Best Practices:**
+    * Strong adherence to IaC best practices like modularity, separation of concerns, and infrastructure testing.
+    * Experience with infrastructure testing frameworks like Terraform Cloud Destroy or Terratest.
+    * Ability to implement security best practices within Terraform configurations.
+* **Automation and CI/CD Integration:**
+    * Experience integrating Terraform with CI/CD pipelines (e.g., Jenkins, GitLab CI/CD) for automated infrastructure provisioning.
+    * Proficiency in using tools like Terraform Enterprise or Terraform Cloud for remote execution and state management.
+    * Ability to write scripts and configurations for automating Terraform workflows.
+* **Advanced Troubleshooting:**
+    * Proven ability to diagnose and troubleshoot complex Terraform issues.
+    * Experience debugging state corruption and applying appropriate recovery methods.
+    * Understanding of Terraform logs and their interpretation for problem-solving. 
+
+This list focuses purely on Terraform-specific skills relevant to a principal Terraform engineer role. 

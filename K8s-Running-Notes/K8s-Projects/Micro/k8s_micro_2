@@ -1,0 +1,17 @@
+	--- Chapter 6. Volumes: attaching disk storage to containers ---
+	Create a multi-container pod and have the pod’s containers operate on the same files by adding a volume to the pod and mounting it in each container
+	Use the emptyDir volume to store temporary, non-persistent data
+	Use the gitRepo volume to easily populate a directory with the contents of a Git repository at pod startup
+	Use the hostPath volume to access files from the host node
+	Mount external storage in a volume to persist pod data across pod restarts
+	Decouple the pod from the storage infrastructure by using PersistentVolumes and PersistentVolumeClaims
+	Have PersistentVolumes of the desired (or the default) storage class dynamically provisioned for each PersistentVolumeClaim
+	Prevent the dynamic provisioner from interfering when you want the PersistentVolumeClaim to be bound to a pre-provisioned PersistentVolume
+
+	--- Chapter 7. ConfigMaps and Secrets: configuring applications ---
+	Override the default command defined in a container image in the pod definition
+	Pass command-line arguments to the main container process
+	Set environment variables for a container
+	Decouple configuration from a pod specification and put it into a ConfigMap
+	Store sensitive data in a Secret and deliver it securely to containers
+	Create a docker-registry Secret and use it to pull images from a private image registry
