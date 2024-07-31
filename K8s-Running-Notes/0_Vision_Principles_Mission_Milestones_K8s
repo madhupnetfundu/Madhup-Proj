@@ -1,7 +1,14 @@
 ## Vision
-	To be able to do the coding in my mind and free style on a text editor on all the concepts that I have come across so far now and shall come in future.
-	Deliver micro, small, medium, large and double XL projects from the concepts learned.
-	PLF (Put my L on the forehead of the best k8s expert in my team)
+1. **Cluster Federation**
+2. **Service Mesh Istio & Linkerd**
+3. **Custom Resource Definitions (CRDs) and Operators**
+4. **Advanced Networking**
+5. **High Availability and Disaster Recovery**
+6. **Automating deployments with CI/CD pipelines**
+7. **K8s observability using Prometheus and Grafana**
+8. **CKA,CKAD,CKS**
+9. **Deliver micro, small, medium, large and double XL projects from the concepts learned.**
+10. **Helm**
 
 ## Principles
 	Achieve every Vision above via micro to medium projects. 
@@ -10,7 +17,6 @@
 ## Mission
 	Publish multiple white papers in K8s.
 	Be a speaker at Kubecon.
-	Always be job ready in K8s.
 	Always be start up ready in K8s.
 	- K8s in different cloud:
 		AWS

@@ -69,3 +69,101 @@
 		Hackerrank
 		GeeksforGeeks
 		Hackerearth
+
+
+## Advice from chat-gpt
+Becoming a revered and skilled Python Guru requires dedication, practice, and a comprehensive approach to learning. Here’s a roadmap to help you become an exceptional Python developer:
+
+### Foundational Knowledge
+1. **Understand Python Basics Thoroughly**:
+   - Master the syntax, data types, and basic control structures (loops, conditionals, functions).
+   - Learn about Python’s standard library and how to use it effectively.
+
+2. **Work on Problem Solving**:
+   - Practice solving problems on platforms like LeetCode, HackerRank, or CodeSignal.
+   - Focus on algorithms and data structures (lists, dictionaries, sets, queues, stacks, trees, graphs).
+
+### Advanced Topics
+3. **Deep Dive into Advanced Python Features**:
+   - Study advanced topics such as decorators, context managers, generators, and metaclasses.
+   - Understand Python's memory management, garbage collection, and the Global Interpreter Lock (GIL).
+
+4. **Object-Oriented Programming (OOP)**:
+   - Master OOP principles (encapsulation, inheritance, polymorphism, abstraction).
+   - Learn how to design and implement complex systems using OOP.
+
+### Best Practices and Development Tools
+5. **Write Clean and Efficient Code**:
+   - Follow PEP 8 guidelines and best practices for writing clean and readable code.
+   - Learn about code optimization and performance tuning.
+
+6. **Version Control Systems**:
+   - Get proficient with Git and understand workflows (branching, merging, rebasing).
+   - Contribute to open source projects to gain practical experience.
+
+### Frameworks and Libraries
+7. **Web Development**:
+   - Learn web frameworks like Django and Flask.
+   - Understand RESTful API design and development.
+
+8. **Data Science and Machine Learning**:
+   - Get familiar with libraries such as NumPy, pandas, Matplotlib, and scikit-learn.
+   - Learn about data analysis, visualization, and basic machine learning concepts.
+
+### Testing and Automation
+9. **Testing**:
+   - Understand the importance of testing and write unit tests using frameworks like unittest, pytest, or nose.
+   - Learn about Test-Driven Development (TDD) and Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+
+10. **Automation and Scripting**:
+   - Write scripts to automate repetitive tasks.
+   - Learn about web scraping using libraries like BeautifulSoup and Scrapy.
+
+### DevOps and Cloud
+11. **DevOps Tools**:
+   - Get hands-on experience with tools like Docker, Kubernetes, Jenkins, and Ansible.
+   - Learn how to deploy and manage applications on cloud platforms like AWS, GCP, or Azure.
+
+12. **Infrastructure as Code**:
+   - Understand and implement Infrastructure as Code (IaC) using tools like Terraform.
+
+### Community and Continuous Learning
+13. **Join the Community**:
+   - Engage with the Python community through forums, meetups, and conferences.
+   - Follow influential Python developers and contribute to discussions and projects.
+
+14. **Stay Updated**:
+   - Continuously learn and stay updated with the latest trends and developments in Python.
+   - Read books, blogs, and documentation to keep your knowledge current.
+
+### Practical Application
+15. **Build Projects**:
+   - Work on real-world projects to apply your knowledge and improve your skills.
+   - Create a portfolio showcasing your work and contributions.
+
+### Key Resources
+- **Books**:
+  - "Fluent Python" by Luciano Ramalho
+  - "Effective Python" by Brett Slatkin
+  - "Python Cookbook" by David Beazley and Brian K. Jones
+
+- **Online Courses**:
+  - Coursera, Udemy, and edX offer excellent courses on Python and related technologies.
+
+- **Documentation**:
+  - The official Python documentation (docs.python.org) is an invaluable resource.
+
+### Final Advice
+- **Practice Regularly**: Coding is a skill best learned by doing. Write code every day.
+- **Challenge Yourself**: Take on projects that push your boundaries and require you to learn new concepts.
+- **Seek Feedback**: Collaborate with others and seek feedback to improve your code quality.
+- **metrics for readable code are**:
+
+Code should be consistent
+Code should be self-descriptive
+Code should be well documented
+Code should utilize stable modern features
+Code shouldn't be unnecessarily complex
+Code shouldn't be un-performant (don't write intentionally slow code)
+
+By following this roadmap and dedicating yourself to continuous learning and practice, you can become a highly skilled and respected Python Guru.

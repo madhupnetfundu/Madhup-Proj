@@ -4,6 +4,13 @@ __pycache__/
 *$py.class
 *exercism*.py
 
+# To record some interview related stuffs
+*interview*
+*interview*.py
+*interview*.txt
+*interivew*.md
+*interview*.sh 
+
 # C extensions
 *.so
 

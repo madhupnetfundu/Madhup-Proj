@@ -3,10 +3,55 @@
 [Good one_Requests from realpython](https://www.geeksforgeeks.org/python-requests-tutorial/) <br>
 [Making HTTP Requests With Python](https://realpython.com/courses/python-requests/) <br>
 [SSL Certificate Verification using requests](https://realpython.com/python-requests/#ssl-certificate-verification) <br>
-[HTTP Requests With Python's urllib.request](https://realpython.com/courses/python-urllib-request/) <br>
-[urrlib3 vs requests](https://nikhilakki.in/python-for-web-backend-requests-vs-urllib3) <br>
+[Requests Library in Python using httpbing.org](https://www.youtube.com/watch?v=Xi1F2ZMAZ7Q)
 <br>
 
 
 ### urllib3
 [readthedocs urllib3](https://urllib3.readthedocs.io/en/stable/user-guide.html) <br>
+[HTTP Requests With Python's urllib.request](https://realpython.com/courses/python-urllib-request/) <br>
+[urrlib3 vs requests](https://nikhilakki.in/python-for-web-backend-requests-vs-urllib3) <br>
+
+Some of the valid methods for authentication via the requests module:
+```python
+# 1. using self generated token 
+requests.get('https://api.github.com/user', auth=customClassForAuthentication('self_generated_token'))
+
+# 2. using username and password
+requests.get('https://api.github.com/user', auth=('username', getpass()))
+
+# 3. using HTTPBasicAuth
+requests.get('https://api.github.com/user', auth=HTTPBasicAuth('username', getpass()))
+```
+
+
+Difference between post and put:
+Remember: 
+💡Use POST when submitting data for server-side processing, and use PUT when you know the exact location of the resource you want to create or update.
+
+Certainly! Let's explore the **differences between `POST` and `PUT` methods in HTTP**:
+
+1. **Purpose**:
+   - **POST**: Used to create a new resource or perform any type of processing. It is not restricted to specific operations.
+   - **PUT**: Primarily used for creating or updating operations. It acts exclusively upon the resource identified by the provided URL.
+
+2. **Resource Identification**:
+   - **POST**: Can operate on any server-side resource, regardless of the URL.
+   - **PUT**: Operates only on the resource identified by the URL provided.
+
+3. **Idempotency**:
+   - **POST**: Not idempotent (multiple requests may have different effects).
+   - **PUT**: Idempotent (repeated requests have the same effect as a single request).
+
+4. **Caching**:
+   - **POST**: Responses are typically not cached.
+   - **PUT**: Responses can be cached since they are idempotent.
+
+In summary, **use `POST` when submitting data for server-side processing**, and **use `PUT` when you know the exact location of the resource you want to create or update**. Keep these distinctions in mind while designing your RESTful APIs! 🚀¹²³⁴⁵
+
+Source: Conversation with Copilot, 15/7/2024
+(1) What is the difference between POST and PUT in HTTP?. https://stackoverflow.com/questions/630453/what-is-the-difference-between-post-and-put-in-http.
+(2) PUT vs POST: What's the difference? - TheServerSide. https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/PUT-vs-POST-Whats-the-difference.
+(3) PUT vs POST | HTTP PUT and POST - Akto Academy. https://www.akto.io/academy/put-vs-post.
+(4) PUT vs POST: Key Differences Explained - apidog.com. https://apidog.com/blog/put-vs-post/.
+(5) PUT vs POST – Difference Between Them - Guru99. https://www.guru99.com/put-vs-post.html.
