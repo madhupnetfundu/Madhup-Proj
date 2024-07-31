@@ -1,0 +1,58 @@
+Examine state with cli :
+```HCL
+terraform show
+terraform state list
+```
+
+Replace a resouce with cli :
+```HCL
+terraform plan -replace="aws_instance.example"
+
+```
+
+## VVIP Concept:
+![Replace a resource with cli](../Terraform/Terraform%20images/replace%20a%20resource%20with%20CLI.png)
+
+
+For changes outside the Terraform workflow that should not impact Terraform operations, use the ignore_changes argument.
+
+
+## Target Resources
+You can use Terraform's `-target` option to target specific resources, modules, or collections of resources.
+
+
+## Enabling Logging for troubleshooting purposes
+```bash
+export TF_LOG_CORE=TRACE
+export TF_LOG_PROVIDER=TRACE
+export TF_LOG_PATH=logs.txt
+```
+
+To generate an example of the core and provider logs, run a `terraform refresh` operation.
+
+Open and review the `logs.txt` file. This log file contains both `provider.terraform-provider-aws` and Terraform core logging.
+
+
+To remove a log stream, unset the environment variable you do not need. Unset Terraform core logging. When you re-run Terraform, Terraform will only log provider specific operations. When you close your terminal session, all environment variables unset.
+
+```
+export TF_LOG_CORE=
+```
+
+
+
+For changes outside the Terraform workflow that should not impact Terraform operations, use the ignore_changes argument.
+
+Add the ignore_changes attribute to your lifecycle block in the EC2 instance.
+
+```
+resource "aws_instance" "example" {
+##...
+  lifecycle {
+    create_before_destroy = true
++   ignore_changes        = [tags]
+  }
+}
+```
+
+

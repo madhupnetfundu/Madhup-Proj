@@ -19,4 +19,4 @@ try:
 except requests.exceptions.ConnectionError as e:
     # Handle any exceptions that occur during the request
     # print('An error occurred during the request:', e)
-    print('An error occurred during the request: ConnectionError')
+    print(f'An error occurred during the request: \n\n{e}')

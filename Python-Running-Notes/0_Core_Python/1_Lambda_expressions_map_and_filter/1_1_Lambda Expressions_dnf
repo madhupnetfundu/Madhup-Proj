@@ -28,6 +28,25 @@ You can call this function like any other function:
 result = add(5, 3)  # result is 8
 ```
 
+So essentially dnf:
+```python
+lambda arguments: expression
+add = lambda x, y: x + y
+result = add(5, 3)  # result is 8
+```
+
+punching in a short example for `sorted` :
+```python
+my_dict = {'a1': ['g', 6], 'a2': ['e', 2], 'a3': ['h', 3], 'a4': ['s', 2], 'a5': ['j', 9], 'a6': ['y', 7]}
+
+# Sort the keys based on the second element of each value (ascending)
+sorted_keys = sorted(my_dict, key=lambda k: my_dict[k][1])
+
+print(sorted_keys)
+# Output: ['a2', 'a4', 'a3', 'a1', 'a6', 'a5']
+```
+
+
 
 In this case, `x` and `y` are the arguments, and `x + y` is the expression that gets evaluated and returned.
 
