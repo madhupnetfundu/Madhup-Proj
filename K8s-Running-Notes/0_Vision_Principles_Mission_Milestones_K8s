@@ -1,4 +1,9 @@
 ## Vision
+	- To be able to write k8s yamls in my mind and free style on a text editor on all the concepts that I have come across so far now and shall come in future.
+	- Deliver micro, small, medium, large and double XL projects from the concepts learned.
+	- PLF (Put my L on the forehead of the best K8s expert in my team)
+
+## Capabilities
 1. **Cluster Federation**
 2. **Service Mesh Istio & Linkerd**
 3. **Custom Resource Definitions (CRDs) and Operators**

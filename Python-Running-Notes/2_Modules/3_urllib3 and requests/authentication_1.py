@@ -1,4 +1,3 @@
-# import requests module 
 import requests 
 from requests.auth import HTTPBasicAuth 
 from getpass import getpass
@@ -9,8 +8,4 @@ from getpass import getpass
 
 url = 'https://api.github.com/user'
 
-requests.get(url, auth=('madhupnetfundu', getpass()))
-
-# print request object 
-# print(response)
-
+requests.get(url, auth=('madhupnetfundu', getpass()), timeout=10)

@@ -1,0 +1,63 @@
+## Vision
+	- To be able to write Prometheus files in my mind and free style on a text editor on all the concepts that I have come across so far now and shall come in future.
+	- Deliver micro, small, medium, large and double XL projects from the concepts learned.
+	- PLF (Put my L on the forehead of the best K8s expert in my team)
+
+## Capabilities / Knowledge Milestones
+	Develop the following capabilties to master Prometheus:
+	1. **Prometheus Configuration:**
+		* Expertise in writing clean, maintainable, and reusable Prometheus configurations.
+		* In-depth knowledge of Prometheus configuration files and their effective use for monitoring and alerting.
+		* Ability to leverage advanced features like recording rules, alerting rules, and service discovery.
+	2. **Data Collection:**
+		* Strong understanding of Prometheus data collection mechanisms and targets.
+		* Experience with instrumenting applications and services for Prometheus metrics.
+		* Proficiency in handling metric types, labels, and exporters for efficient data collection.
+
+	3. **Alerting and Notifications:**
+		* Deep understanding of Prometheus alerting rules and notification configurations.
+		* Experience with setting up alerting channels like email, Slack, and PagerDuty.
+		* Ability to define alerting thresholds, severity levels, and escalation policies.
+
+	4. **PromQL Query Language:**
+		* Strong proficiency in writing complex PromQL queries for metric analysis and visualization.
+		* Experience with aggregations, functions, and operators in PromQL.
+		* Ability to create custom dashboards and graphs using PromQL queries.
+
+	5. **Service Discovery and Target Management:**
+		* Expertise in configuring service discovery mechanisms for dynamic target management.
+		* Experience with Prometheus exporters, relabeling, and target discovery.
+		* Proficiency in managing target groups, blackbox exporters, and scrape configurations.
+
+	6. **High Availability and Scalability:**
+		* Deep understanding of Prometheus HA setups, federation, and remote storage.
+		* Experience with clustering, sharding, and load balancing for scalable Prometheus deployments.
+		* Ability to design fault-tolerant architectures and disaster recovery plans for Prometheus.
+
+	7. **Grafana Integration:**
+		* Strong proficiency in integrating Prometheus with Grafana for advanced visualization and monitoring.
+		* Experience with Grafana dashboards, panels, and data source configurations.
+		* Ability to create custom Grafana templates and alerts based on Prometheus metrics.
+
+	8. **Prometheus Monitoring Stack:**
+		* Expertise in deploying and managing the entire Prometheus monitoring stack.
+		* Experience with components like Alertmanager, Node Exporter, and Blackbox Exporter.
+		* Proficiency in setting up monitoring pipelines, data retention policies, and backup strategies.
+
+	9. **Deliver micro, small, medium, large and double XL projects from the concepts learned.**
+
+## Principles
+	Achieve every Vision above via micro to medium projects. 
+	Achieve PLF via large and double XL projects
+
+## Mission
+	Publish multiple white papers in Prometheus and the likes of Promtheus such as Datadog, New Relic, Dynatrace, AppDynamics, OpenTelemetry etc.
+	Be a speaker at conference on one of the above.
+	Always be start up ready in all the above.
+	- Observability in different clouds:
+		AWS
+		Azure
+		GCP
+		OCI
+		Redhat
+		IBM Cloud

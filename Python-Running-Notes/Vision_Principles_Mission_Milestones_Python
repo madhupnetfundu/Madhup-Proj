@@ -20,25 +20,45 @@
 		Redhat	
 
 ## Knowledge Milestones
+
+OOPs Python
+Core Python Kachda Patti
+Serious Coding
+Modules
+Libraries
+DSA
+Practice, Practice, Practice	
+
 	- OOPs Python
 		PEIA (Polymorphism,.., Abstraction)
+		Books on OOPs
 		
 	
 	- Core Python Kachda Patti:
+		Loops: for loops, while loops, nested loops
+		Control Flow: break, continue, pass, if else, elif
+		error handling : try, except, else, finally and raise
+		lambda expressions, map, filter and reduce 
+		sorting of dictionaries using lambda expressions and sorted function		
 		decorators
-		lambda expressions, map, filter and reduce
-		file related mgmt
-		error handling
-		assertion
-		args n kwargs
+		file related mgmt (open, read, write, close)
+		assertion and debugging
+		args n kwargs 
 		enum
-		isinstance
+		isinstance and issubclass
 		string manipulation
+		Books on Core Python
+
+	- Serious Coding:
+		Functions:
+		Pythonic code writing using classes and functions
+		Books on writing serious and Pythonic code using PEP8 and PEP20
+
 	
 	- Modules:
+		collections
 		sys
 		os
-		collections
 		urllib3
 		requests
 		configparser
@@ -55,20 +75,26 @@
 		tempfile VVIP
 		csv VVIP
 		dataclasses (advanced and VVIP)
+		Books that cover the above modules
 	
 	- Libraries:
-			pandas
-			matplotlib
-			flask
-			django
-			numpy
-			
+		pandas
+		matplotlib
+		flask
+		django
+		numpy
+		Books that cover the above libraries
+
 	- DSA:
-		
+		Books on DSA
+
+
 	- Practice, Practice, Practice
+		Exercism
 		Hackerrank
 		GeeksforGeeks
 		Hackerearth
+		Leetcode
 
 
 ## Advice from chat-gpt
